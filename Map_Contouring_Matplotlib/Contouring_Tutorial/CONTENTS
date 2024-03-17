@@ -1,0 +1,14 @@
+# Part 1: Introduction
+## 1.2 - Software Installation
+# Part 2: Data Import
+## 2.1 - Importing Necessary libraries
+## 2.2 - Opening a NetCDF file 
+## 2.3 - Extracting and Validating Grid Variables from NetCDF File
+## 2.4 - Extracting and Validating Attribute Data from NetCDF File
+# Part 3: Defining essential functions
+## 3.1 - Calculating signed area of a polygon
+## 3.2 - Classifying polygons
+## 3.3 - Checking Points Within a Polygon
+## 3.4 - Reversing the order of elements
+## 3.5 - Geometry extraction
+## 3.6 - Interactive plotting
