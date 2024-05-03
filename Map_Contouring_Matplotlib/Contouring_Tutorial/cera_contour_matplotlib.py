@@ -3,9 +3,7 @@
 # If multiple time steps are given in the ADCIRC netcdf file,
 # the first time step will be extracted.
 
-# Copyright (C): Carola Kaiser 2014-2023, Louisiana State University
-# Based on an idea by Rusty Holleman. With special thanks to Ian Thomas 
-# from the matplotlib developer team for helping us create clean geometries.
+# Copyright (C): Carola Kaiser 2014-2024, Louisiana State University
 
 # This script is part of the Coastal Emergency Risks Assessment (CERA),
 # a real-time visualization system for ADCIRC storm surge guidance.
@@ -32,7 +30,7 @@ import netCDF4
 import matplotlib.pyplot as plt
 import matplotlib.tri as tri
 from matplotlib import path
-from shapely.geometry import geo, Polygon, Point, MultiPolygon
+#from shapely.geometry import geo, Polygon, Point, MultiPolygon
 import numpy
 from operator import itemgetter
 
@@ -100,97 +98,6 @@ def get_netcdf_data(infile, attrname):
     return data[0]
 
   return data
-
-###############################################################################
-def signed_area(ring):
-  v2 = numpy.roll(ring, -1, axis=0)
-  return numpy.cross(ring, v2).sum() / 2.0
-
-def classify_polygons(polys):
-  exteriors = []
-  interiors = []
-  for p in polys:
-    if signed_area(p) >= 0:
-      exteriors.append(p)
-    else:
-      interiors.append(p)
-
-  return exteriors, interiors
-
-def points_inside_poly(points, polygon):
-  p = path.Path(polygon)
-  return p.contains_points(points)
-
-def reverse_geometry(p):
-  return numpy.flipud(p)
-
-###############################################################################
-def extract_geometries(contour, data_min, data_max):
-  geoms = []
-  vars = []
-
-  # create list of tuples (geom, vmin, vmax)
-  num_collections = len(contour.collections)
-  for colli, coll in enumerate(contour.collections):
-
-    # tricontourf generates extra collections for all geometries below
-    # and above the given levels
-    if colli == 0:
-      vmin, vmax = data_min, contour.levels[colli]
-    elif colli == num_collections-1:
-      vmin, vmax = contour.levels[colli-1], data_max
-    else:
-      vmin, vmax = contour.levels[colli-1:colli+1]
-
-    for p in coll.get_paths():
-      p.simplify_threshold = 0.0
-      polys = p.to_polygons()
-
-      # don't append an empty polygon to the geometry or it will mess up
-      # the indexing
-      if polys:
-        # remove all geometries with less than 3 points
-        polys = [p for p in polys if p.shape[0] >= 3]
-
-        # exteriors and interiors can be in any order (an exterior is not
-        # necessarily followed by its interiors - test it!)
-        exteriors, interiors = classify_polygons(polys)
-        if len(interiors) > 0:
-          interior_points = [pts[0] for pts in interiors]
-
-        overall_inout = numpy.zeros((len(interiors),), dtype=bool)
-
-        for exterior in exteriors:
-          if len(interiors) > 0:
-            inout = points_inside_poly(interior_points, exterior)
-            overall_inout = numpy.logical_or(overall_inout, inout)
-
-            my_interiors = [g for i, g in enumerate(interiors) if inout[i]]
-            poly = Polygon(exterior, my_interiors)
-
-          else:
-            poly = Polygon(exterior)
-
-          # clean-up polygons (remove intersections)
-          if not poly.is_valid:
-            poly = poly.buffer(0.0)
-
-          geoms.append(poly)
-          vars.append((vmin, vmax))
-
-        # collect all interiors which do not belong to any of the exteriors
-        outer_interiors = [interior for i, interior in enumerate(interiors) if not overall_inout[i]]
-        for geom in outer_interiors:
-          poly = Polygon(reverse_geometry(geom))
-
-          # clean-up polygons (remove intersections)
-          if not poly.is_valid:
-            poly = poly.buffer(0.0)
-
-          geoms.append(poly)
-          vars.append((vmin, vmax))
-
-  return geoms, vars
 
 ###############################################################################
 # cera_contour_matplotlib.py -i [infile] -a [attrname] <-g [gridfile] -n [intervals] -m [maxlevel]>"
@@ -265,10 +172,6 @@ def create_contours(argv):
   #############################################################################
   print('Making contours ...\n')
   contour = plt.tricontourf(triang, data, levels=levels, extend='both')
-
-  # extracting contour shapes from tricontourf object
-  print('Extracting contour geometries ...')
-  geoms, vars = extract_geometries(contour, data.min(), data.max())
 
   # pyplot color plot
   c = plt.tricontourf(triang, data, levels=levels, cmap=plt.cm.jet, extend='both')
