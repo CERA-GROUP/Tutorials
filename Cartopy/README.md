@@ -16,7 +16,7 @@ This tutorial is an integral part of the CERA Storm Analysis Tutorials Repositor
 
 ### Jupyter Notebook
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]() 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Cartopy/Cartopy.ipynb) 
 
 ### Python standalone
 * Direct python script [file](cera_cartopy.py).
