@@ -19,9 +19,9 @@ This tutorial is an integral part of the CERA Storm Analysis Tutorials Repositor
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]() 
 
 ### Python standalone
-* Direct python script [file]().
+* Direct python script [file](Cartopy/Cartopy.ipynb).
 
-* Check the tutorial [instructions]().
+* Check the tutorial [instructions](Cartopy/Cartopy.ipynb).
 
 * Example station point data file [water_level_stations.csv](https://cloud.cera.lsu.edu/s/6qamYSWn2FarbLP/download/water_level_stations.csv).
 
