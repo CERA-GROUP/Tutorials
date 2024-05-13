@@ -19,7 +19,7 @@ This tutorial is an integral part of the CERA Storm Analysis Tutorials Repositor
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]() 
 
 ### Python standalone
-* Direct python script [file](Cartopy.ipynb).
+* Direct python script [file](cera_cartopy.py).
 
 * Check the tutorial [instructions](Cartopy.ipynb).
 
