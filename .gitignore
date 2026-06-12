@@ -4,3 +4,4 @@ Map_Contouring_Matplotlib/Contouring_Tutorial/maxele_contouring.63.nc.2
 /NetCDF_quality check_png/*.nc
 /Analyzing_NetCDF/NetCDF_Tutorial/data/*.nc
 /Map_Contouring_Matplotlib/Contouring_Tutorial/*.nc
+/Cartopy/water_level_stations.csv
