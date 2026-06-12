@@ -39,7 +39,7 @@ cd Cartopy
 wget -O water_level_stations.csv https://cloud.cera.lsu.edu/s/6qamYSWn2FarbLP/download/water_level_stations.csv
 python3 cera_cartopy.py water_level_stations.csv
 python3 cera_cartopy.py water_level_stations.csv --output station_map.png
-python3 cera_cartopy.py water_level_stations.csv --no-show
+python3 cera_cartopy.py water_level_stations.csv --output station_map.png --no-show
 python3 cera_cartopy.py water_level_stations.csv --title "Water level stations"
 ```
 
