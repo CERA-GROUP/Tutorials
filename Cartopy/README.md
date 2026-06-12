@@ -14,6 +14,13 @@ This tutorial is an integral part of the CERA Storm Analysis Tutorials Repositor
 
 ## Getting Started
 
+Create and activate the shared environment from the repository root before running the notebook or standalone script:
+
+```bash
+conda env create -f environment.yml
+conda activate cera-tutorials
+```
+
 ### Jupyter Notebook
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Cartopy/Cartopy.ipynb) 
@@ -29,18 +36,17 @@ Given the relative path to the repository and the name of the Python script, you
 
 ```bash
 cd Cartopy
-python3 cera_cartopy.py
-```
-
-If your script requires a CSV file as an argument, you can provide it like this:
-
-```bash
-python3 cera_cartopy.py data.csv
-```
-
-Replace `data.csv` with the name of your CSV file or for the case of the example 'water_level_stations.csv'.
-```bash
+wget -O water_level_stations.csv https://cloud.cera.lsu.edu/s/6qamYSWn2FarbLP/download/water_level_stations.csv
 python3 cera_cartopy.py water_level_stations.csv
+python3 cera_cartopy.py water_level_stations.csv --output station_map.png
+python3 cera_cartopy.py water_level_stations.csv --output station_map.png --no-show
+python3 cera_cartopy.py water_level_stations.csv --title "Water level stations"
+```
+
+The input CSV file must contain these columns:
+
+```text
+station_id, lat, lon
 ```
 
 ---
