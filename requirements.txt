@@ -1,0 +1,10 @@
+cartopy
+ipykernel
+ipywidgets
+jupyterlab
+matplotlib
+netCDF4
+notebook
+numpy
+pandas
+Pillow

@@ -14,6 +14,13 @@ This tutorial is an integral part of the CERA Storm Analysis Tutorials Repositor
 
 ## Getting Started
 
+Create and activate the shared environment from the repository root before running the notebook or standalone script:
+
+```bash
+conda env create -f environment.yml
+conda activate cera-tutorials
+```
+
 ### Jupyter Notebook
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Cartopy/Cartopy.ipynb) 
