@@ -1,1 +1,0 @@
-deleted all lines from dat file that are not in the CERA BEST runtime span

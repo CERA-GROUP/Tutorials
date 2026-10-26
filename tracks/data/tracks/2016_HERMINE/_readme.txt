@@ -1,1 +1,0 @@
-deleted all line "genesis" from dat file

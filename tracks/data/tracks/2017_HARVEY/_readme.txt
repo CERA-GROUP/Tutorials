@@ -1,1 +1,0 @@
-track from tropicalatlantic.com is too short; final entries from track from NHC archive used instead (however, NHC track does not contain the first entries, so this is a concatenate)
