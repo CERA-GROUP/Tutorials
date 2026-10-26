@@ -1,25 +1,43 @@
-Map_Contouring_Matplotlib/Contouring_Tutorial/maxele_contouring.63.nc
-Map_Contouring_Matplotlib/Contouring_Tutorial/maxele_contouring.63.nc.1
-Map_Contouring_Matplotlib/Contouring_Tutorial/maxele_contouring.63.nc.2
-/NetCDF_quality check_png/*.nc
-/Analyzing_NetCDF/NetCDF_Tutorial/data/*.nc
-/Analyzing_NetCDF/NetCDF_Tutorial/maxele.63.nc
-/Analyzing_NetCDF/NetCDF_Tutorial/maxele.63.nc.*
-/Map_Contouring_Matplotlib/Contouring_Tutorial/*.nc
-/Cartopy/water_level_stations.csv
+# ---------------------------------------------------------------------------
+# Path-agnostic ignore rules.
+# These match by extension or filename so they survive tutorial renames and
+# new tutorials. If a tutorial needs to commit an example file that matches
+# one of these patterns, whitelist it explicitly with a leading "!".
+# ---------------------------------------------------------------------------
 
-# Python generated files
+# Tutorial data files (large, downloaded per tutorial)
+*.nc
+*.nc.*
+water_level_stations.csv
+
+# Generated maps and outputs
+station_map.png
+*_map.png
+output_*.txt
+
+# OS junk
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 
+# ---------------------------------------------------------------------------
 # Local environments
+# ---------------------------------------------------------------------------
 .venv/
 venv/
 .env
 
+# ---------------------------------------------------------------------------
 # Tutorial generated files
+# ---------------------------------------------------------------------------
 .cartopy_test/
-Cartopy/station_map.png
-Cartopy/*_map.png
-Analyzing_NetCDF/NetCDF_Tutorial/output_*.txt
+
+# ---------------------------------------------------------------------------
+# Whitelist: assets that must be committed even if a rule above matches.
+# ---------------------------------------------------------------------------
+!Contouring_Tutorial/example_*_plot.png

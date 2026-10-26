@@ -1,6 +1,6 @@
 <h2 align="center">
 		Coastal Emergency Risks Assessment (CERA) <br/>
-		<img src="https://github.com/CERA-GROUP/Tutorials/blob/main/logo/cera_150x150.png" width="100" height="100">  <br/><a target="_blank" href="https://cera.coastalrisk.live/">cera.coastalrisk.live</a> 
+		<img src="logo/cera_150x150.png" width="100" height="100">  <br/><a target="_blank" href="https://cera.coastalrisk.live/">cera.coastalrisk.live</a> 
 </h2>
 <br/>
 
@@ -16,55 +16,39 @@ Our objective is to simulate and visualize storm surge using advanced computer m
 
 ---
 
-## Environment setup
-The tutorials use Python, Jupyter, NumPy, pandas, Matplotlib, netCDF4, Cartopy, Pillow, and ipywidgets.
-
-The recommended setup uses Conda/Mamba with packages from conda-forge:
-
-```bash
-conda env create -f environment.yml
-conda activate cera-tutorials
-python -m ipykernel install --user --name cera-tutorials --display-name "Python (cera-tutorials)"
-```
-
-Alternatively, with pip:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install -r requirements.txt
-```
-
-Cartopy and netCDF4 depend on compiled libraries, so Conda/Mamba is recommended if pip installation fails.
-
----
-
 ## Tutorials
-### [A Beginner's Guide to Analyzing ADCIRC NetCDF Data with Python](Analyzing_NetCDF)
-The NetCDF format stores large datasets in a well-organized manner that allows a successful data analysis in a user-friendly way. This tutorial explains the structure of a NetCDF file using the Python library NetCDF4.
 
-```bash
-cd Analyzing_NetCDF/NetCDF_Tutorial
-wget -O maxele.63.nc https://cloud.cera.lsu.edu/s/7PfqfzWDj285Afw/download/maxele.63.nc
-jupyter lab netCDF4.ipynb
-python3 net_CDF4.py
-```
+Requires the Conda environment in `environment.yml`.
 
-### [Matplotlib Contouring for ADCIRC NetCDF Data](Map_Contouring_Matplotlib)
-The Coastal Emergency Risks Assessment (CERA) tutorial leverages Matplotlib to visualize NetCDF data, offering insights into coastal phenomena for the Northern Gulf and the Atlantic Coast regions. 
+| Tutorial | Directory |
+|---|---|
+| A Beginner's Guide to Analyzing ADCIRC NetCDF Data with Python | [`Analyzing NetCDF Files/`](Analyzing%20NetCDF%20Files) |
+| Matplotlib Contouring for ADCIRC NetCDF Data | [`Creating Map Contours with Matplotlib/`](Creating%20Map%20Contours%20with%20Matplotlib) |
+| Geospatial Data Visualization: Introduction to Cartopy | [`Adding Map Features with Cartopy/`](Adding%20Map%20Features%20with%20Cartopy) |
+| Visualizing a Single NHC Track with Matplotlib | [`Visualizing a Single NHC Track with Matplotlib/`](Visualizing%20a%20Single%20NHC%20Track%20with%20Matplotlib) |
+| Visualizing Multiple NHC Tracks with Matplotlib | [`Visualizing Multiple NHC Tracks with Matplotlib/`](Visualizing%20Multiple%20NHC%20Tracks%20with%20Matplotlib) |
+| Stage-Discharge Curve Fitting for River Flow | [`Calculating River Flow/`](Calculating%20River%20Flow) |
 
-### [Geospatial Data Visualization: Introduction to Cartopy](Cartopy)
+### Analyzing ADCIRC NetCDF Data with Python
+Explains the structure of an ADCIRC NetCDF file using the Python library NetCDF4, and how its well-organized layout enables analysis of large geospatial datasets.
 
-The CERA Storm Analysis Tutorials, maintained by the LSU CERA-Group, provide guides for simulating and visualizing storm surge using advanced computer models and technologies, with tutorials on analyzing ADCIRC NetCDF data with Python, Matplotlib contouring, and geospatial data visualization using Cartopy.
+### Matplotlib Contouring for ADCIRC NetCDF Data
+Uses Matplotlib to turn ADCIRC NetCDF data into contoured storm surge maps for the Northern Gulf and the Atlantic Coast, with attention to clean geometries for GIS workflows.
 
-```bash
-cd Cartopy
-wget -O water_level_stations.csv https://cloud.cera.lsu.edu/s/6qamYSWn2FarbLP/download/water_level_stations.csv
-jupyter lab Cartopy.ipynb
-python3 cera_cartopy.py water_level_stations.csv --output station_map.png --no-show
-```
+### Geospatial Data Visualization: Introduction to Cartopy
+Introduces the Cartopy library for geospatial visualization: maps with varying projections, overlaying coordinate points, and customizing map appearance.
+
+### Visualizing a Single NHC Track with Matplotlib
+Renders one ATCF best-track file into a publication-style map, optionally with validation stations overlaid.
+
+### Visualizing Multiple NHC Tracks with Matplotlib
+Plots a catalog of Atlantic best-track files as regional overview maps, colored by wind speed.
+
+### Stage-Discharge Curve Fitting for River Flow
+Fits a stage-discharge curve for a tidal river station.
 
 ---
+
 #### Contact Us
 If you have any questions, suggestions, or would like to get in touch with our team, please feel free to reach out to us. Together, we can make a significant impact in enhancing our preparedness and resilience to storm-related challenges.
 <p align="center">
