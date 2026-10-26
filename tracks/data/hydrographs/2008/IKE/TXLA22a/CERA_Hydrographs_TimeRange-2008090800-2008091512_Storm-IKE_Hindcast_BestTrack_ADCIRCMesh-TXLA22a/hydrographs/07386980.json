@@ -1,0 +1,1504 @@
+{
+    "agency": "USGS",
+    "forecast_data": [
+        {
+            "time_UTC": "2008-09-08 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-09 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-10 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-11 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-12 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-13 18:00",
+            "value_ft": 7.91
+        },
+        {
+            "time_UTC": "2008-09-13 19:00",
+            "value_ft": 8.16
+        },
+        {
+            "time_UTC": "2008-09-13 20:00",
+            "value_ft": 8.326
+        },
+        {
+            "time_UTC": "2008-09-13 21:00",
+            "value_ft": 8.383
+        },
+        {
+            "time_UTC": "2008-09-13 22:00",
+            "value_ft": 8.339
+        },
+        {
+            "time_UTC": "2008-09-13 23:00",
+            "value_ft": 8.239
+        },
+        {
+            "time_UTC": "2008-09-14 00:00",
+            "value_ft": 8.131
+        },
+        {
+            "time_UTC": "2008-09-14 01:00",
+            "value_ft": 8.049
+        },
+        {
+            "time_UTC": "2008-09-14 02:00",
+            "value_ft": 7.996
+        },
+        {
+            "time_UTC": "2008-09-14 03:00",
+            "value_ft": 7.954
+        },
+        {
+            "time_UTC": "2008-09-14 04:00",
+            "value_ft": 7.909
+        },
+        {
+            "time_UTC": "2008-09-14 05:00",
+            "value_ft": 7.864
+        },
+        {
+            "time_UTC": "2008-09-14 06:00",
+            "value_ft": 7.847
+        },
+        {
+            "time_UTC": "2008-09-14 07:00",
+            "value_ft": 7.834
+        },
+        {
+            "time_UTC": "2008-09-14 08:00",
+            "value_ft": 7.817
+        },
+        {
+            "time_UTC": "2008-09-14 09:00",
+            "value_ft": 7.799
+        },
+        {
+            "time_UTC": "2008-09-14 10:00",
+            "value_ft": 7.786
+        },
+        {
+            "time_UTC": "2008-09-14 11:00",
+            "value_ft": 7.774
+        },
+        {
+            "time_UTC": "2008-09-14 12:00",
+            "value_ft": 7.763
+        },
+        {
+            "time_UTC": "2008-09-14 13:00",
+            "value_ft": 7.753
+        },
+        {
+            "time_UTC": "2008-09-14 14:00",
+            "value_ft": 7.745
+        },
+        {
+            "time_UTC": "2008-09-14 15:00",
+            "value_ft": 7.739
+        },
+        {
+            "time_UTC": "2008-09-14 16:00",
+            "value_ft": 7.737
+        },
+        {
+            "time_UTC": "2008-09-14 17:00",
+            "value_ft": 7.737
+        },
+        {
+            "time_UTC": "2008-09-14 18:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-14 19:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-14 20:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-14 21:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-14 22:00",
+            "value_ft": 7.735
+        },
+        {
+            "time_UTC": "2008-09-14 23:00",
+            "value_ft": 7.735
+        },
+        {
+            "time_UTC": "2008-09-15 00:00",
+            "value_ft": 7.735
+        },
+        {
+            "time_UTC": "2008-09-15 01:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 02:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 03:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 04:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 05:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 06:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 07:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 08:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 09:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 10:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 11:00",
+            "value_ft": 7.736
+        },
+        {
+            "time_UTC": "2008-09-15 12:00",
+            "value_ft": 7.736
+        }
+    ],
+    "lat": 29.951111,
+    "lon": -92.156361,
+    "observed_data": [
+        {
+            "time_UTC": "2008-09-08 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2008-09-08 01:00",
+            "value_ft": 1.827
+        },
+        {
+            "time_UTC": "2008-09-08 02:00",
+            "value_ft": 1.727
+        },
+        {
+            "time_UTC": "2008-09-08 03:00",
+            "value_ft": 1.657
+        },
+        {
+            "time_UTC": "2008-09-08 04:00",
+            "value_ft": 1.637
+        },
+        {
+            "time_UTC": "2008-09-08 05:00",
+            "value_ft": 1.737
+        },
+        {
+            "time_UTC": "2008-09-08 06:00",
+            "value_ft": 1.947
+        },
+        {
+            "time_UTC": "2008-09-08 07:00",
+            "value_ft": 2.207
+        },
+        {
+            "time_UTC": "2008-09-08 08:00",
+            "value_ft": 2.327
+        },
+        {
+            "time_UTC": "2008-09-08 09:00",
+            "value_ft": 2.587
+        },
+        {
+            "time_UTC": "2008-09-08 10:00",
+            "value_ft": 2.747
+        },
+        {
+            "time_UTC": "2008-09-08 11:00",
+            "value_ft": 2.837
+        },
+        {
+            "time_UTC": "2008-09-08 12:00",
+            "value_ft": 2.887
+        },
+        {
+            "time_UTC": "2008-09-08 13:00",
+            "value_ft": 2.907
+        },
+        {
+            "time_UTC": "2008-09-08 14:00",
+            "value_ft": 2.907
+        },
+        {
+            "time_UTC": "2008-09-08 15:00",
+            "value_ft": 2.847
+        },
+        {
+            "time_UTC": "2008-09-08 16:00",
+            "value_ft": 2.797
+        },
+        {
+            "time_UTC": "2008-09-08 17:00",
+            "value_ft": 2.747
+        },
+        {
+            "time_UTC": "2008-09-08 18:00",
+            "value_ft": 2.687
+        },
+        {
+            "time_UTC": "2008-09-08 19:00",
+            "value_ft": 2.627
+        },
+        {
+            "time_UTC": "2008-09-08 20:00",
+            "value_ft": 2.557
+        },
+        {
+            "time_UTC": "2008-09-08 21:00",
+            "value_ft": 2.467
+        },
+        {
+            "time_UTC": "2008-09-08 22:00",
+            "value_ft": 2.407
+        },
+        {
+            "time_UTC": "2008-09-08 23:00",
+            "value_ft": 2.337
+        },
+        {
+            "time_UTC": "2008-09-09 00:00",
+            "value_ft": 2.257
+        },
+        {
+            "time_UTC": "2008-09-09 01:00",
+            "value_ft": 2.177
+        },
+        {
+            "time_UTC": "2008-09-09 02:00",
+            "value_ft": 2.107
+        },
+        {
+            "time_UTC": "2008-09-09 03:00",
+            "value_ft": 2.067
+        },
+        {
+            "time_UTC": "2008-09-09 04:00",
+            "value_ft": 2.047
+        },
+        {
+            "time_UTC": "2008-09-09 05:00",
+            "value_ft": 2.067
+        },
+        {
+            "time_UTC": "2008-09-09 06:00",
+            "value_ft": 2.177
+        },
+        {
+            "time_UTC": "2008-09-09 07:00",
+            "value_ft": 2.337
+        },
+        {
+            "time_UTC": "2008-09-09 08:00",
+            "value_ft": 2.537
+        },
+        {
+            "time_UTC": "2008-09-09 09:00",
+            "value_ft": 2.657
+        },
+        {
+            "time_UTC": "2008-09-09 10:00",
+            "value_ft": 2.797
+        },
+        {
+            "time_UTC": "2008-09-09 11:00",
+            "value_ft": 2.867
+        },
+        {
+            "time_UTC": "2008-09-09 12:00",
+            "value_ft": 2.937
+        },
+        {
+            "time_UTC": "2008-09-09 13:00",
+            "value_ft": 3.007
+        },
+        {
+            "time_UTC": "2008-09-09 14:00",
+            "value_ft": 3.017
+        },
+        {
+            "time_UTC": "2008-09-09 15:00",
+            "value_ft": 2.987
+        },
+        {
+            "time_UTC": "2008-09-09 16:00",
+            "value_ft": 2.937
+        },
+        {
+            "time_UTC": "2008-09-09 17:00",
+            "value_ft": 2.877
+        },
+        {
+            "time_UTC": "2008-09-09 18:00",
+            "value_ft": 2.807
+        },
+        {
+            "time_UTC": "2008-09-09 19:00",
+            "value_ft": 2.757
+        },
+        {
+            "time_UTC": "2008-09-09 20:00",
+            "value_ft": 2.717
+        },
+        {
+            "time_UTC": "2008-09-09 21:00",
+            "value_ft": 2.677
+        },
+        {
+            "time_UTC": "2008-09-09 22:00",
+            "value_ft": 2.617
+        },
+        {
+            "time_UTC": "2008-09-09 23:00",
+            "value_ft": 2.537
+        },
+        {
+            "time_UTC": "2008-09-10 00:00",
+            "value_ft": 2.457
+        },
+        {
+            "time_UTC": "2008-09-10 01:00",
+            "value_ft": 2.377
+        },
+        {
+            "time_UTC": "2008-09-10 02:00",
+            "value_ft": 2.287
+        },
+        {
+            "time_UTC": "2008-09-10 03:00",
+            "value_ft": 2.217
+        },
+        {
+            "time_UTC": "2008-09-10 04:00",
+            "value_ft": 2.157
+        },
+        {
+            "time_UTC": "2008-09-10 05:00",
+            "value_ft": 2.107
+        },
+        {
+            "time_UTC": "2008-09-10 06:00",
+            "value_ft": 2.057
+        },
+        {
+            "time_UTC": "2008-09-10 07:00",
+            "value_ft": 2.117
+        },
+        {
+            "time_UTC": "2008-09-10 08:00",
+            "value_ft": 2.257
+        },
+        {
+            "time_UTC": "2008-09-10 09:00",
+            "value_ft": 2.427
+        },
+        {
+            "time_UTC": "2008-09-10 10:00",
+            "value_ft": 2.557
+        },
+        {
+            "time_UTC": "2008-09-10 11:00",
+            "value_ft": 2.727
+        },
+        {
+            "time_UTC": "2008-09-10 12:00",
+            "value_ft": 2.837
+        },
+        {
+            "time_UTC": "2008-09-10 13:00",
+            "value_ft": 2.957
+        },
+        {
+            "time_UTC": "2008-09-10 14:00",
+            "value_ft": 2.997
+        },
+        {
+            "time_UTC": "2008-09-10 15:00",
+            "value_ft": 3.007
+        },
+        {
+            "time_UTC": "2008-09-10 16:00",
+            "value_ft": 3.017
+        },
+        {
+            "time_UTC": "2008-09-10 17:00",
+            "value_ft": 2.997
+        },
+        {
+            "time_UTC": "2008-09-10 18:00",
+            "value_ft": 2.977
+        },
+        {
+            "time_UTC": "2008-09-10 19:00",
+            "value_ft": 2.967
+        },
+        {
+            "time_UTC": "2008-09-10 20:00",
+            "value_ft": 2.917
+        },
+        {
+            "time_UTC": "2008-09-10 21:00",
+            "value_ft": 2.877
+        },
+        {
+            "time_UTC": "2008-09-10 22:00",
+            "value_ft": 2.837
+        },
+        {
+            "time_UTC": "2008-09-10 23:00",
+            "value_ft": 2.777
+        },
+        {
+            "time_UTC": "2008-09-11 00:00",
+            "value_ft": 2.707
+        },
+        {
+            "time_UTC": "2008-09-11 01:00",
+            "value_ft": 2.627
+        },
+        {
+            "time_UTC": "2008-09-11 02:00",
+            "value_ft": 2.547
+        },
+        {
+            "time_UTC": "2008-09-11 03:00",
+            "value_ft": 2.477
+        },
+        {
+            "time_UTC": "2008-09-11 04:00",
+            "value_ft": 2.387
+        },
+        {
+            "time_UTC": "2008-09-11 05:00",
+            "value_ft": 2.347
+        },
+        {
+            "time_UTC": "2008-09-11 06:00",
+            "value_ft": 2.307
+        },
+        {
+            "time_UTC": "2008-09-11 07:00",
+            "value_ft": 2.327
+        },
+        {
+            "time_UTC": "2008-09-11 08:00",
+            "value_ft": 2.447
+        },
+        {
+            "time_UTC": "2008-09-11 09:00",
+            "value_ft": 2.637
+        },
+        {
+            "time_UTC": "2008-09-11 10:00",
+            "value_ft": 2.747
+        },
+        {
+            "time_UTC": "2008-09-11 11:00",
+            "value_ft": 2.887
+        },
+        {
+            "time_UTC": "2008-09-11 12:00",
+            "value_ft": 3.007
+        },
+        {
+            "time_UTC": "2008-09-11 13:00",
+            "value_ft": 3.157
+        },
+        {
+            "time_UTC": "2008-09-11 14:00",
+            "value_ft": 3.257
+        },
+        {
+            "time_UTC": "2008-09-11 15:00",
+            "value_ft": 3.267
+        },
+        {
+            "time_UTC": "2008-09-11 16:00",
+            "value_ft": 3.387
+        },
+        {
+            "time_UTC": "2008-09-11 17:00",
+            "value_ft": 3.387
+        },
+        {
+            "time_UTC": "2008-09-11 18:00",
+            "value_ft": 3.427
+        },
+        {
+            "time_UTC": "2008-09-11 19:00",
+            "value_ft": 3.527
+        },
+        {
+            "time_UTC": "2008-09-11 20:00",
+            "value_ft": 3.517
+        },
+        {
+            "time_UTC": "2008-09-11 21:00",
+            "value_ft": 3.587
+        },
+        {
+            "time_UTC": "2008-09-11 22:00",
+            "value_ft": 3.647
+        },
+        {
+            "time_UTC": "2008-09-11 23:00",
+            "value_ft": 3.667
+        },
+        {
+            "time_UTC": "2008-09-12 00:00",
+            "value_ft": 3.667
+        },
+        {
+            "time_UTC": "2008-09-12 01:00",
+            "value_ft": 3.627
+        },
+        {
+            "time_UTC": "2008-09-12 02:00",
+            "value_ft": 3.617
+        },
+        {
+            "time_UTC": "2008-09-12 03:00",
+            "value_ft": 3.567
+        },
+        {
+            "time_UTC": "2008-09-12 04:00",
+            "value_ft": 3.457
+        },
+        {
+            "time_UTC": "2008-09-12 05:00",
+            "value_ft": 3.387
+        },
+        {
+            "time_UTC": "2008-09-12 06:00",
+            "value_ft": 3.317
+        },
+        {
+            "time_UTC": "2008-09-12 07:00",
+            "value_ft": 3.327
+        },
+        {
+            "time_UTC": "2008-09-12 08:00",
+            "value_ft": 3.397
+        },
+        {
+            "time_UTC": "2008-09-12 09:00",
+            "value_ft": 3.567
+        },
+        {
+            "time_UTC": "2008-09-12 10:00",
+            "value_ft": 3.697
+        },
+        {
+            "time_UTC": "2008-09-12 11:00",
+            "value_ft": 3.837
+        },
+        {
+            "time_UTC": "2008-09-12 12:00",
+            "value_ft": 4.027
+        },
+        {
+            "time_UTC": "2008-09-12 13:00",
+            "value_ft": 4.197
+        },
+        {
+            "time_UTC": "2008-09-12 14:00",
+            "value_ft": 4.387
+        },
+        {
+            "time_UTC": "2008-09-12 15:00",
+            "value_ft": 4.587
+        },
+        {
+            "time_UTC": "2008-09-12 16:00",
+            "value_ft": 4.777
+        },
+        {
+            "time_UTC": "2008-09-12 17:00",
+            "value_ft": 4.947
+        },
+        {
+            "time_UTC": "2008-09-12 18:00",
+            "value_ft": 5.147
+        },
+        {
+            "time_UTC": "2008-09-12 19:00",
+            "value_ft": 5.307
+        },
+        {
+            "time_UTC": "2008-09-12 20:00",
+            "value_ft": 5.457
+        },
+        {
+            "time_UTC": "2008-09-12 21:00",
+            "value_ft": 5.567
+        },
+        {
+            "time_UTC": "2008-09-12 22:00",
+            "value_ft": 5.687
+        },
+        {
+            "time_UTC": "2008-09-12 23:00",
+            "value_ft": 5.817
+        },
+        {
+            "time_UTC": "2008-09-13 00:00",
+            "value_ft": 5.947
+        },
+        {
+            "time_UTC": "2008-09-13 01:00",
+            "value_ft": 6.077
+        },
+        {
+            "time_UTC": "2008-09-13 02:00",
+            "value_ft": 6.237
+        },
+        {
+            "time_UTC": "2008-09-13 03:00",
+            "value_ft": 6.427
+        },
+        {
+            "time_UTC": "2008-09-13 04:00",
+            "value_ft": 6.627
+        },
+        {
+            "time_UTC": "2008-09-13 05:00",
+            "value_ft": 7.057
+        },
+        {
+            "time_UTC": "2008-09-13 06:00",
+            "value_ft": 7.367
+        },
+        {
+            "time_UTC": "2008-09-13 07:00",
+            "value_ft": 7.647
+        },
+        {
+            "time_UTC": "2008-09-13 08:00",
+            "value_ft": 7.907
+        },
+        {
+            "time_UTC": "2008-09-13 09:00",
+            "value_ft": 8.147
+        },
+        {
+            "time_UTC": "2008-09-13 10:00",
+            "value_ft": 8.297
+        },
+        {
+            "time_UTC": "2008-09-13 11:00",
+            "value_ft": 8.407
+        },
+        {
+            "time_UTC": "2008-09-13 12:00",
+            "value_ft": 8.517
+        },
+        {
+            "time_UTC": "2008-09-13 13:00",
+            "value_ft": 8.577
+        },
+        {
+            "time_UTC": "2008-09-13 14:00",
+            "value_ft": 8.617
+        },
+        {
+            "time_UTC": "2008-09-13 15:00",
+            "value_ft": 8.697
+        },
+        {
+            "time_UTC": "2008-09-13 16:00",
+            "value_ft": 8.687
+        },
+        {
+            "time_UTC": "2008-09-13 17:00",
+            "value_ft": 8.697
+        },
+        {
+            "time_UTC": "2008-09-13 18:00",
+            "value_ft": 8.707
+        },
+        {
+            "time_UTC": "2008-09-13 19:00",
+            "value_ft": 8.687
+        },
+        {
+            "time_UTC": "2008-09-13 20:00",
+            "value_ft": 8.627
+        },
+        {
+            "time_UTC": "2008-09-13 21:00",
+            "value_ft": 8.557
+        },
+        {
+            "time_UTC": "2008-09-13 22:00",
+            "value_ft": 8.487
+        },
+        {
+            "time_UTC": "2008-09-13 23:00",
+            "value_ft": 8.387
+        },
+        {
+            "time_UTC": "2008-09-14 00:00",
+            "value_ft": 8.297
+        },
+        {
+            "time_UTC": "2008-09-14 01:00",
+            "value_ft": 8.227
+        },
+        {
+            "time_UTC": "2008-09-14 02:00",
+            "value_ft": 8.147
+        },
+        {
+            "time_UTC": "2008-09-14 03:00",
+            "value_ft": 8.077
+        },
+        {
+            "time_UTC": "2008-09-14 04:00",
+            "value_ft": 7.997
+        },
+        {
+            "time_UTC": "2008-09-14 05:00",
+            "value_ft": 7.927
+        },
+        {
+            "time_UTC": "2008-09-14 06:00",
+            "value_ft": 7.847
+        },
+        {
+            "time_UTC": "2008-09-14 07:00",
+            "value_ft": 7.787
+        },
+        {
+            "time_UTC": "2008-09-14 08:00",
+            "value_ft": 7.707
+        },
+        {
+            "time_UTC": "2008-09-14 09:00",
+            "value_ft": 7.637
+        },
+        {
+            "time_UTC": "2008-09-14 10:00",
+            "value_ft": 7.567
+        },
+        {
+            "time_UTC": "2008-09-14 11:00",
+            "value_ft": 7.497
+        },
+        {
+            "time_UTC": "2008-09-14 12:00",
+            "value_ft": 7.437
+        },
+        {
+            "time_UTC": "2008-09-14 13:00",
+            "value_ft": 7.377
+        },
+        {
+            "time_UTC": "2008-09-14 14:00",
+            "value_ft": 7.317
+        },
+        {
+            "time_UTC": "2008-09-14 15:00",
+            "value_ft": 7.247
+        },
+        {
+            "time_UTC": "2008-09-14 16:00",
+            "value_ft": 7.177
+        },
+        {
+            "time_UTC": "2008-09-14 17:00",
+            "value_ft": 7.107
+        },
+        {
+            "time_UTC": "2008-09-14 18:00",
+            "value_ft": 7.047
+        },
+        {
+            "time_UTC": "2008-09-14 19:00",
+            "value_ft": 6.977
+        },
+        {
+            "time_UTC": "2008-09-14 20:00",
+            "value_ft": 6.937
+        },
+        {
+            "time_UTC": "2008-09-14 21:00",
+            "value_ft": 6.877
+        },
+        {
+            "time_UTC": "2008-09-14 22:00",
+            "value_ft": 6.827
+        },
+        {
+            "time_UTC": "2008-09-14 23:00",
+            "value_ft": 6.787
+        },
+        {
+            "time_UTC": "2008-09-15 00:00",
+            "value_ft": 6.737
+        },
+        {
+            "time_UTC": "2008-09-15 01:00",
+            "value_ft": 6.687
+        },
+        {
+            "time_UTC": "2008-09-15 02:00",
+            "value_ft": 6.627
+        },
+        {
+            "time_UTC": "2008-09-15 03:00",
+            "value_ft": 6.577
+        },
+        {
+            "time_UTC": "2008-09-15 04:00",
+            "value_ft": 6.527
+        },
+        {
+            "time_UTC": "2008-09-15 05:00",
+            "value_ft": 6.477
+        },
+        {
+            "time_UTC": "2008-09-15 06:00",
+            "value_ft": 6.427
+        },
+        {
+            "time_UTC": "2008-09-15 07:00",
+            "value_ft": 6.377
+        },
+        {
+            "time_UTC": "2008-09-15 08:00",
+            "value_ft": 6.297
+        },
+        {
+            "time_UTC": "2008-09-15 09:00",
+            "value_ft": 6.227
+        },
+        {
+            "time_UTC": "2008-09-15 10:00",
+            "value_ft": 6.167
+        },
+        {
+            "time_UTC": "2008-09-15 11:00",
+            "value_ft": 6.097
+        },
+        {
+            "time_UTC": "2008-09-15 12:00",
+            "value_ft": 6.027
+        },
+        {
+            "time_UTC": "2008-09-15 13:00",
+            "value_ft": 5.957
+        },
+        {
+            "time_UTC": "2008-09-15 14:00",
+            "value_ft": 5.887
+        },
+        {
+            "time_UTC": "2008-09-15 15:00",
+            "value_ft": 5.807
+        },
+        {
+            "time_UTC": "2008-09-15 16:00",
+            "value_ft": 5.737
+        },
+        {
+            "time_UTC": "2008-09-15 17:00",
+            "value_ft": 5.667
+        },
+        {
+            "time_UTC": "2008-09-15 18:00",
+            "value_ft": 5.597
+        },
+        {
+            "time_UTC": "2008-09-15 19:00",
+            "value_ft": 5.527
+        },
+        {
+            "time_UTC": "2008-09-15 20:00",
+            "value_ft": 5.447
+        },
+        {
+            "time_UTC": "2008-09-15 21:00",
+            "value_ft": 5.377
+        },
+        {
+            "time_UTC": "2008-09-15 22:00",
+            "value_ft": 5.307
+        },
+        {
+            "time_UTC": "2008-09-15 23:00",
+            "value_ft": 5.237
+        }
+    ],
+    "station_id": "07386980",
+    "station_name": "Vermilion River at Perry",
+    "vertical_datum": "NAVD88"
+}

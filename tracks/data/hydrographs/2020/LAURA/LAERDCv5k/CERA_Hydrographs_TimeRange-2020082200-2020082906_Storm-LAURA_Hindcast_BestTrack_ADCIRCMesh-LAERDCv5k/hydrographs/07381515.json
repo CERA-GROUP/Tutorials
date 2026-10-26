@@ -1,0 +1,1464 @@
+{
+    "agency": "USGS",
+    "forecast_data": [
+        {
+            "time_UTC": "2020-08-22 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 01:00",
+            "value_ft": 2.678
+        },
+        {
+            "time_UTC": "2020-08-22 02:00",
+            "value_ft": 2.744
+        },
+        {
+            "time_UTC": "2020-08-22 03:00",
+            "value_ft": 2.778
+        },
+        {
+            "time_UTC": "2020-08-22 04:00",
+            "value_ft": 2.772
+        },
+        {
+            "time_UTC": "2020-08-22 05:00",
+            "value_ft": 2.735
+        },
+        {
+            "time_UTC": "2020-08-22 06:00",
+            "value_ft": 2.68
+        },
+        {
+            "time_UTC": "2020-08-22 07:00",
+            "value_ft": 2.617
+        },
+        {
+            "time_UTC": "2020-08-22 08:00",
+            "value_ft": 2.553
+        },
+        {
+            "time_UTC": "2020-08-22 09:00",
+            "value_ft": 2.493
+        },
+        {
+            "time_UTC": "2020-08-22 10:00",
+            "value_ft": 2.442
+        },
+        {
+            "time_UTC": "2020-08-22 11:00",
+            "value_ft": 2.411
+        },
+        {
+            "time_UTC": "2020-08-22 12:00",
+            "value_ft": 2.408
+        },
+        {
+            "time_UTC": "2020-08-22 13:00",
+            "value_ft": 2.436
+        },
+        {
+            "time_UTC": "2020-08-22 14:00",
+            "value_ft": 2.488
+        },
+        {
+            "time_UTC": "2020-08-22 15:00",
+            "value_ft": 2.551
+        },
+        {
+            "time_UTC": "2020-08-22 16:00",
+            "value_ft": 2.597
+        },
+        {
+            "time_UTC": "2020-08-22 17:00",
+            "value_ft": 2.603
+        },
+        {
+            "time_UTC": "2020-08-22 18:00",
+            "value_ft": 2.578
+        },
+        {
+            "time_UTC": "2020-08-22 19:00",
+            "value_ft": 2.54
+        },
+        {
+            "time_UTC": "2020-08-22 20:00",
+            "value_ft": 2.498
+        },
+        {
+            "time_UTC": "2020-08-22 21:00",
+            "value_ft": 2.46
+        },
+        {
+            "time_UTC": "2020-08-22 22:00",
+            "value_ft": 2.433
+        },
+        {
+            "time_UTC": "2020-08-22 23:00",
+            "value_ft": 2.43
+        },
+        {
+            "time_UTC": "2020-08-23 00:00",
+            "value_ft": 2.459
+        },
+        {
+            "time_UTC": "2020-08-23 01:00",
+            "value_ft": 2.514
+        },
+        {
+            "time_UTC": "2020-08-23 02:00",
+            "value_ft": 2.593
+        },
+        {
+            "time_UTC": "2020-08-23 03:00",
+            "value_ft": 2.673
+        },
+        {
+            "time_UTC": "2020-08-23 04:00",
+            "value_ft": 2.726
+        },
+        {
+            "time_UTC": "2020-08-23 05:00",
+            "value_ft": 2.739
+        },
+        {
+            "time_UTC": "2020-08-23 06:00",
+            "value_ft": 2.713
+        },
+        {
+            "time_UTC": "2020-08-23 07:00",
+            "value_ft": 2.67
+        },
+        {
+            "time_UTC": "2020-08-23 08:00",
+            "value_ft": 2.617
+        },
+        {
+            "time_UTC": "2020-08-23 09:00",
+            "value_ft": 2.565
+        },
+        {
+            "time_UTC": "2020-08-23 10:00",
+            "value_ft": 2.518
+        },
+        {
+            "time_UTC": "2020-08-23 11:00",
+            "value_ft": 2.484
+        },
+        {
+            "time_UTC": "2020-08-23 12:00",
+            "value_ft": 2.472
+        },
+        {
+            "time_UTC": "2020-08-23 13:00",
+            "value_ft": 2.485
+        },
+        {
+            "time_UTC": "2020-08-23 14:00",
+            "value_ft": 2.516
+        },
+        {
+            "time_UTC": "2020-08-23 15:00",
+            "value_ft": 2.56
+        },
+        {
+            "time_UTC": "2020-08-23 16:00",
+            "value_ft": 2.603
+        },
+        {
+            "time_UTC": "2020-08-23 17:00",
+            "value_ft": 2.62
+        },
+        {
+            "time_UTC": "2020-08-23 18:00",
+            "value_ft": 2.605
+        },
+        {
+            "time_UTC": "2020-08-23 19:00",
+            "value_ft": 2.567
+        },
+        {
+            "time_UTC": "2020-08-23 20:00",
+            "value_ft": 2.521
+        },
+        {
+            "time_UTC": "2020-08-23 21:00",
+            "value_ft": 2.472
+        },
+        {
+            "time_UTC": "2020-08-23 22:00",
+            "value_ft": 2.426
+        },
+        {
+            "time_UTC": "2020-08-23 23:00",
+            "value_ft": 2.388
+        },
+        {
+            "time_UTC": "2020-08-24 00:00",
+            "value_ft": 2.367
+        },
+        {
+            "time_UTC": "2020-08-24 01:00",
+            "value_ft": 2.374
+        },
+        {
+            "time_UTC": "2020-08-24 02:00",
+            "value_ft": 2.41
+        },
+        {
+            "time_UTC": "2020-08-24 03:00",
+            "value_ft": 2.481
+        },
+        {
+            "time_UTC": "2020-08-24 04:00",
+            "value_ft": 2.581
+        },
+        {
+            "time_UTC": "2020-08-24 05:00",
+            "value_ft": 2.675
+        },
+        {
+            "time_UTC": "2020-08-24 06:00",
+            "value_ft": 2.72
+        },
+        {
+            "time_UTC": "2020-08-24 07:00",
+            "value_ft": 2.719
+        },
+        {
+            "time_UTC": "2020-08-24 08:00",
+            "value_ft": 2.694
+        },
+        {
+            "time_UTC": "2020-08-24 09:00",
+            "value_ft": 2.658
+        },
+        {
+            "time_UTC": "2020-08-24 10:00",
+            "value_ft": 2.621
+        },
+        {
+            "time_UTC": "2020-08-24 11:00",
+            "value_ft": 2.589
+        },
+        {
+            "time_UTC": "2020-08-24 12:00",
+            "value_ft": 2.57
+        },
+        {
+            "time_UTC": "2020-08-24 13:00",
+            "value_ft": 2.569
+        },
+        {
+            "time_UTC": "2020-08-24 14:00",
+            "value_ft": 2.58
+        },
+        {
+            "time_UTC": "2020-08-24 15:00",
+            "value_ft": 2.597
+        },
+        {
+            "time_UTC": "2020-08-24 16:00",
+            "value_ft": 2.614
+        },
+        {
+            "time_UTC": "2020-08-24 17:00",
+            "value_ft": 2.623
+        },
+        {
+            "time_UTC": "2020-08-24 18:00",
+            "value_ft": 2.613
+        },
+        {
+            "time_UTC": "2020-08-24 19:00",
+            "value_ft": 2.581
+        },
+        {
+            "time_UTC": "2020-08-24 20:00",
+            "value_ft": 2.536
+        },
+        {
+            "time_UTC": "2020-08-24 21:00",
+            "value_ft": 2.486
+        },
+        {
+            "time_UTC": "2020-08-24 22:00",
+            "value_ft": 2.435
+        },
+        {
+            "time_UTC": "2020-08-24 23:00",
+            "value_ft": 2.386
+        },
+        {
+            "time_UTC": "2020-08-25 00:00",
+            "value_ft": 2.344
+        },
+        {
+            "time_UTC": "2020-08-25 01:00",
+            "value_ft": 2.315
+        },
+        {
+            "time_UTC": "2020-08-25 02:00",
+            "value_ft": 2.309
+        },
+        {
+            "time_UTC": "2020-08-25 03:00",
+            "value_ft": 2.332
+        },
+        {
+            "time_UTC": "2020-08-25 04:00",
+            "value_ft": 2.389
+        },
+        {
+            "time_UTC": "2020-08-25 05:00",
+            "value_ft": 2.489
+        },
+        {
+            "time_UTC": "2020-08-25 06:00",
+            "value_ft": 2.606
+        },
+        {
+            "time_UTC": "2020-08-25 07:00",
+            "value_ft": 2.688
+        },
+        {
+            "time_UTC": "2020-08-25 08:00",
+            "value_ft": 2.724
+        },
+        {
+            "time_UTC": "2020-08-25 09:00",
+            "value_ft": 2.731
+        },
+        {
+            "time_UTC": "2020-08-25 10:00",
+            "value_ft": 2.722
+        },
+        {
+            "time_UTC": "2020-08-25 11:00",
+            "value_ft": 2.705
+        },
+        {
+            "time_UTC": "2020-08-25 12:00",
+            "value_ft": 2.69
+        },
+        {
+            "time_UTC": "2020-08-25 13:00",
+            "value_ft": 2.683
+        },
+        {
+            "time_UTC": "2020-08-25 14:00",
+            "value_ft": 2.687
+        },
+        {
+            "time_UTC": "2020-08-25 15:00",
+            "value_ft": 2.694
+        },
+        {
+            "time_UTC": "2020-08-25 16:00",
+            "value_ft": 2.697
+        },
+        {
+            "time_UTC": "2020-08-25 17:00",
+            "value_ft": 2.696
+        },
+        {
+            "time_UTC": "2020-08-25 18:00",
+            "value_ft": 2.688
+        },
+        {
+            "time_UTC": "2020-08-25 19:00",
+            "value_ft": 2.662
+        },
+        {
+            "time_UTC": "2020-08-25 20:00",
+            "value_ft": 2.62
+        },
+        {
+            "time_UTC": "2020-08-25 21:00",
+            "value_ft": 2.567
+        },
+        {
+            "time_UTC": "2020-08-25 22:00",
+            "value_ft": 2.51
+        },
+        {
+            "time_UTC": "2020-08-25 23:00",
+            "value_ft": 2.451
+        },
+        {
+            "time_UTC": "2020-08-26 00:00",
+            "value_ft": 2.393
+        },
+        {
+            "time_UTC": "2020-08-26 01:00",
+            "value_ft": 2.341
+        },
+        {
+            "time_UTC": "2020-08-26 02:00",
+            "value_ft": 2.299
+        },
+        {
+            "time_UTC": "2020-08-26 03:00",
+            "value_ft": 2.276
+        },
+        {
+            "time_UTC": "2020-08-26 04:00",
+            "value_ft": 2.279
+        },
+        {
+            "time_UTC": "2020-08-26 05:00",
+            "value_ft": 2.317
+        },
+        {
+            "time_UTC": "2020-08-26 06:00",
+            "value_ft": 2.404
+        },
+        {
+            "time_UTC": "2020-08-26 07:00",
+            "value_ft": 2.539
+        },
+        {
+            "time_UTC": "2020-08-26 08:00",
+            "value_ft": 2.679
+        },
+        {
+            "time_UTC": "2020-08-26 09:00",
+            "value_ft": 2.779
+        },
+        {
+            "time_UTC": "2020-08-26 10:00",
+            "value_ft": 2.843
+        },
+        {
+            "time_UTC": "2020-08-26 11:00",
+            "value_ft": 2.886
+        },
+        {
+            "time_UTC": "2020-08-26 12:00",
+            "value_ft": 2.909
+        },
+        {
+            "time_UTC": "2020-08-26 13:00",
+            "value_ft": 2.916
+        },
+        {
+            "time_UTC": "2020-08-26 14:00",
+            "value_ft": 2.914
+        },
+        {
+            "time_UTC": "2020-08-26 15:00",
+            "value_ft": 2.908
+        },
+        {
+            "time_UTC": "2020-08-26 16:00",
+            "value_ft": 2.9
+        },
+        {
+            "time_UTC": "2020-08-26 17:00",
+            "value_ft": 2.892
+        },
+        {
+            "time_UTC": "2020-08-26 18:00",
+            "value_ft": 2.897
+        },
+        {
+            "time_UTC": "2020-08-26 19:00",
+            "value_ft": 2.915
+        },
+        {
+            "time_UTC": "2020-08-26 20:00",
+            "value_ft": 2.934
+        },
+        {
+            "time_UTC": "2020-08-26 21:00",
+            "value_ft": 2.945
+        },
+        {
+            "time_UTC": "2020-08-26 22:00",
+            "value_ft": 2.965
+        },
+        {
+            "time_UTC": "2020-08-26 23:00",
+            "value_ft": 3.02
+        },
+        {
+            "time_UTC": "2020-08-27 00:00",
+            "value_ft": 3.148
+        },
+        {
+            "time_UTC": "2020-08-27 01:00",
+            "value_ft": 3.39
+        },
+        {
+            "time_UTC": "2020-08-27 02:00",
+            "value_ft": 3.724
+        },
+        {
+            "time_UTC": "2020-08-27 03:00",
+            "value_ft": 4.093
+        },
+        {
+            "time_UTC": "2020-08-27 04:00",
+            "value_ft": 4.527
+        },
+        {
+            "time_UTC": "2020-08-27 05:00",
+            "value_ft": 4.88
+        },
+        {
+            "time_UTC": "2020-08-27 06:00",
+            "value_ft": 5.032
+        },
+        {
+            "time_UTC": "2020-08-27 07:00",
+            "value_ft": 5.122
+        },
+        {
+            "time_UTC": "2020-08-27 08:00",
+            "value_ft": 5.233
+        },
+        {
+            "time_UTC": "2020-08-27 09:00",
+            "value_ft": 5.344
+        },
+        {
+            "time_UTC": "2020-08-27 10:00",
+            "value_ft": 5.433
+        },
+        {
+            "time_UTC": "2020-08-27 11:00",
+            "value_ft": 5.472
+        },
+        {
+            "time_UTC": "2020-08-27 12:00",
+            "value_ft": 5.45
+        },
+        {
+            "time_UTC": "2020-08-27 13:00",
+            "value_ft": 5.376
+        },
+        {
+            "time_UTC": "2020-08-27 14:00",
+            "value_ft": 5.264
+        },
+        {
+            "time_UTC": "2020-08-27 15:00",
+            "value_ft": 5.135
+        },
+        {
+            "time_UTC": "2020-08-27 16:00",
+            "value_ft": 4.969
+        },
+        {
+            "time_UTC": "2020-08-27 17:00",
+            "value_ft": 4.782
+        },
+        {
+            "time_UTC": "2020-08-27 18:00",
+            "value_ft": 4.614
+        },
+        {
+            "time_UTC": "2020-08-27 19:00",
+            "value_ft": 4.437
+        },
+        {
+            "time_UTC": "2020-08-27 20:00",
+            "value_ft": 4.272
+        },
+        {
+            "time_UTC": "2020-08-27 21:00",
+            "value_ft": 4.114
+        },
+        {
+            "time_UTC": "2020-08-27 22:00",
+            "value_ft": 3.988
+        },
+        {
+            "time_UTC": "2020-08-27 23:00",
+            "value_ft": 3.896
+        },
+        {
+            "time_UTC": "2020-08-28 00:00",
+            "value_ft": 3.835
+        },
+        {
+            "time_UTC": "2020-08-28 01:00",
+            "value_ft": 3.743
+        },
+        {
+            "time_UTC": "2020-08-28 02:00",
+            "value_ft": 3.67
+        },
+        {
+            "time_UTC": "2020-08-28 03:00",
+            "value_ft": 3.577
+        },
+        {
+            "time_UTC": "2020-08-28 04:00",
+            "value_ft": 3.509
+        },
+        {
+            "time_UTC": "2020-08-28 05:00",
+            "value_ft": 3.434
+        },
+        {
+            "time_UTC": "2020-08-28 06:00",
+            "value_ft": 3.358
+        },
+        {
+            "time_UTC": "2020-08-28 07:00",
+            "value_ft": 3.29
+        },
+        {
+            "time_UTC": "2020-08-28 08:00",
+            "value_ft": 3.229
+        },
+        {
+            "time_UTC": "2020-08-28 09:00",
+            "value_ft": 3.238
+        },
+        {
+            "time_UTC": "2020-08-28 10:00",
+            "value_ft": 3.274
+        },
+        {
+            "time_UTC": "2020-08-28 11:00",
+            "value_ft": 3.363
+        },
+        {
+            "time_UTC": "2020-08-28 12:00",
+            "value_ft": 3.351
+        },
+        {
+            "time_UTC": "2020-08-28 13:00",
+            "value_ft": 3.345
+        },
+        {
+            "time_UTC": "2020-08-28 14:00",
+            "value_ft": 3.284
+        },
+        {
+            "time_UTC": "2020-08-28 15:00",
+            "value_ft": 3.259
+        },
+        {
+            "time_UTC": "2020-08-28 16:00",
+            "value_ft": 3.205
+        },
+        {
+            "time_UTC": "2020-08-28 17:00",
+            "value_ft": 3.231
+        },
+        {
+            "time_UTC": "2020-08-28 18:00",
+            "value_ft": 3.208
+        },
+        {
+            "time_UTC": "2020-08-28 19:00",
+            "value_ft": 3.215
+        },
+        {
+            "time_UTC": "2020-08-28 20:00",
+            "value_ft": 3.154
+        },
+        {
+            "time_UTC": "2020-08-28 21:00",
+            "value_ft": 3.126
+        },
+        {
+            "time_UTC": "2020-08-28 22:00",
+            "value_ft": 3.045
+        },
+        {
+            "time_UTC": "2020-08-28 23:00",
+            "value_ft": 3.016
+        },
+        {
+            "time_UTC": "2020-08-29 00:00",
+            "value_ft": 2.929
+        },
+        {
+            "time_UTC": "2020-08-29 01:00",
+            "value_ft": 2.887
+        },
+        {
+            "time_UTC": "2020-08-29 02:00",
+            "value_ft": 2.789
+        },
+        {
+            "time_UTC": "2020-08-29 03:00",
+            "value_ft": 2.751
+        },
+        {
+            "time_UTC": "2020-08-29 04:00",
+            "value_ft": 2.647
+        },
+        {
+            "time_UTC": "2020-08-29 05:00",
+            "value_ft": 2.621
+        },
+        {
+            "time_UTC": "2020-08-29 06:00",
+            "value_ft": 2.535
+        }
+    ],
+    "lat": 30.28158638,
+    "lon": -91.6867797,
+    "observed_data": [
+        {
+            "time_UTC": "2020-08-22 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-22 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-23 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-24 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-25 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 08:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 09:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 10:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 11:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 12:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 13:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 14:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 15:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 16:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 17:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 18:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 19:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 20:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 21:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 22:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-26 23:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 00:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 01:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 02:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 03:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 04:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 05:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 06:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 07:00",
+            "value_ft": null
+        },
+        {
+            "time_UTC": "2020-08-27 08:00",
+            "value_ft": 6.455
+        },
+        {
+            "time_UTC": "2020-08-27 09:00",
+            "value_ft": 6.895
+        },
+        {
+            "time_UTC": "2020-08-27 10:00",
+            "value_ft": 7.245
+        },
+        {
+            "time_UTC": "2020-08-27 11:00",
+            "value_ft": 7.565
+        },
+        {
+            "time_UTC": "2020-08-27 12:00",
+            "value_ft": 7.725
+        },
+        {
+            "time_UTC": "2020-08-27 13:00",
+            "value_ft": 7.805
+        },
+        {
+            "time_UTC": "2020-08-27 14:00",
+            "value_ft": 7.955
+        },
+        {
+            "time_UTC": "2020-08-27 15:00",
+            "value_ft": 8.115
+        },
+        {
+            "time_UTC": "2020-08-27 16:00",
+            "value_ft": 8.135
+        },
+        {
+            "time_UTC": "2020-08-27 17:00",
+            "value_ft": 8.085
+        },
+        {
+            "time_UTC": "2020-08-27 18:00",
+            "value_ft": 8.025
+        },
+        {
+            "time_UTC": "2020-08-27 19:00",
+            "value_ft": 7.965
+        },
+        {
+            "time_UTC": "2020-08-27 20:00",
+            "value_ft": 7.975
+        },
+        {
+            "time_UTC": "2020-08-27 21:00",
+            "value_ft": 7.895
+        },
+        {
+            "time_UTC": "2020-08-27 22:00",
+            "value_ft": 7.755
+        },
+        {
+            "time_UTC": "2020-08-27 23:00",
+            "value_ft": 7.695
+        },
+        {
+            "time_UTC": "2020-08-28 00:00",
+            "value_ft": 7.565
+        },
+        {
+            "time_UTC": "2020-08-28 01:00",
+            "value_ft": 7.465
+        },
+        {
+            "time_UTC": "2020-08-28 02:00",
+            "value_ft": 7.375
+        },
+        {
+            "time_UTC": "2020-08-28 03:00",
+            "value_ft": 7.285
+        },
+        {
+            "time_UTC": "2020-08-28 04:00",
+            "value_ft": 7.215
+        },
+        {
+            "time_UTC": "2020-08-28 05:00",
+            "value_ft": 7.135
+        },
+        {
+            "time_UTC": "2020-08-28 06:00",
+            "value_ft": 7.075
+        },
+        {
+            "time_UTC": "2020-08-28 07:00",
+            "value_ft": 7.015
+        },
+        {
+            "time_UTC": "2020-08-28 08:00",
+            "value_ft": 6.965
+        },
+        {
+            "time_UTC": "2020-08-28 09:00",
+            "value_ft": 6.945
+        },
+        {
+            "time_UTC": "2020-08-28 10:00",
+            "value_ft": 6.935
+        },
+        {
+            "time_UTC": "2020-08-28 11:00",
+            "value_ft": 6.945
+        },
+        {
+            "time_UTC": "2020-08-28 12:00",
+            "value_ft": 6.925
+        },
+        {
+            "time_UTC": "2020-08-28 13:00",
+            "value_ft": 6.905
+        },
+        {
+            "time_UTC": "2020-08-28 14:00",
+            "value_ft": 6.885
+        },
+        {
+            "time_UTC": "2020-08-28 15:00",
+            "value_ft": 6.875
+        },
+        {
+            "time_UTC": "2020-08-28 16:00",
+            "value_ft": 6.835
+        },
+        {
+            "time_UTC": "2020-08-28 17:00",
+            "value_ft": 6.805
+        },
+        {
+            "time_UTC": "2020-08-28 18:00",
+            "value_ft": 6.825
+        },
+        {
+            "time_UTC": "2020-08-28 19:00",
+            "value_ft": 6.795
+        },
+        {
+            "time_UTC": "2020-08-28 20:00",
+            "value_ft": 6.755
+        },
+        {
+            "time_UTC": "2020-08-28 21:00",
+            "value_ft": 6.745
+        },
+        {
+            "time_UTC": "2020-08-28 22:00",
+            "value_ft": 6.685
+        },
+        {
+            "time_UTC": "2020-08-28 23:00",
+            "value_ft": 6.645
+        },
+        {
+            "time_UTC": "2020-08-29 00:00",
+            "value_ft": 6.615
+        },
+        {
+            "time_UTC": "2020-08-29 01:00",
+            "value_ft": 6.575
+        },
+        {
+            "time_UTC": "2020-08-29 02:00",
+            "value_ft": 6.525
+        },
+        {
+            "time_UTC": "2020-08-29 03:00",
+            "value_ft": 6.485
+        },
+        {
+            "time_UTC": "2020-08-29 04:00",
+            "value_ft": 6.425
+        },
+        {
+            "time_UTC": "2020-08-29 05:00",
+            "value_ft": 6.375
+        },
+        {
+            "time_UTC": "2020-08-29 06:00",
+            "value_ft": 6.325
+        },
+        {
+            "time_UTC": "2020-08-29 07:00",
+            "value_ft": 6.285
+        },
+        {
+            "time_UTC": "2020-08-29 08:00",
+            "value_ft": 6.265
+        },
+        {
+            "time_UTC": "2020-08-29 09:00",
+            "value_ft": 6.235
+        },
+        {
+            "time_UTC": "2020-08-29 10:00",
+            "value_ft": 6.215
+        },
+        {
+            "time_UTC": "2020-08-29 11:00",
+            "value_ft": 6.205
+        },
+        {
+            "time_UTC": "2020-08-29 12:00",
+            "value_ft": 6.175
+        },
+        {
+            "time_UTC": "2020-08-29 13:00",
+            "value_ft": 6.155
+        },
+        {
+            "time_UTC": "2020-08-29 14:00",
+            "value_ft": 6.145
+        },
+        {
+            "time_UTC": "2020-08-29 15:00",
+            "value_ft": 6.125
+        },
+        {
+            "time_UTC": "2020-08-29 16:00",
+            "value_ft": 6.105
+        },
+        {
+            "time_UTC": "2020-08-29 17:00",
+            "value_ft": 6.075
+        },
+        {
+            "time_UTC": "2020-08-29 18:00",
+            "value_ft": 6.055
+        },
+        {
+            "time_UTC": "2020-08-29 19:00",
+            "value_ft": 5.955
+        }
+    ],
+    "station_id": "07381515",
+    "station_name": "Atchafalaya River at Butte La Rose",
+    "vertical_datum": "NAVD88"
+}
