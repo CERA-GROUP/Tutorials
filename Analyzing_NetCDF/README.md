@@ -15,17 +15,35 @@ Scientific geospatial datasets like climatological or oceanographic model result
 
 ## Getting Started
 
-### Jupiter Notebook
+### Jupyter Notebook
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Analyzing_NetCDF/NetCDF_Tutorial/netCDF4.ipynb)
 
 ### Python standalone
 
-* Direct python script [file](https://github.com/CERA-GROUP/CERA_Tutorials/blob/main/Notebook/net_CDF4.py).
+* Direct python script [file](NetCDF_Tutorial/net_CDF4.py).
 
-* Check the tutorial [instructions](https://github.com/CERA-GROUP/CERA_Tutorials/blob/main/Notebook/netCDF4.ipynb).
+* Check the tutorial [instructions](NetCDF_Tutorial/netCDF4.ipynb).
 
 * Example ADCIRC NetCDF file [input file](https://cloud.cera.lsu.edu/s/7PfqfzWDj285Afw/download/maxele.63.nc).
+
+## Running the tutorial
+
+From the repository root:
+
+```bash
+conda env create -f environment.yml
+conda activate cera-tutorials
+```
+
+Then download the example data and run the notebook or standalone script:
+
+```bash
+cd Analyzing_NetCDF/NetCDF_Tutorial
+wget -O maxele.63.nc https://cloud.cera.lsu.edu/s/7PfqfzWDj285Afw/download/maxele.63.nc
+jupyter lab netCDF4.ipynb
+python3 net_CDF4.py
+```
 
 ---
 ### Contact Us

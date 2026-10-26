@@ -3,4 +3,23 @@ Map_Contouring_Matplotlib/Contouring_Tutorial/maxele_contouring.63.nc.1
 Map_Contouring_Matplotlib/Contouring_Tutorial/maxele_contouring.63.nc.2
 /NetCDF_quality check_png/*.nc
 /Analyzing_NetCDF/NetCDF_Tutorial/data/*.nc
+/Analyzing_NetCDF/NetCDF_Tutorial/maxele.63.nc
+/Analyzing_NetCDF/NetCDF_Tutorial/maxele.63.nc.*
 /Map_Contouring_Matplotlib/Contouring_Tutorial/*.nc
+/Cartopy/water_level_stations.csv
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+.env
+
+# Tutorial generated files
+.cartopy_test/
+Cartopy/station_map.png
+Cartopy/*_map.png
+Analyzing_NetCDF/NetCDF_Tutorial/output_*.txt

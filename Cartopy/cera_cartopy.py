@@ -2,126 +2,348 @@
 # CERA Group, Louisiana State University
 # Website: https://cera.coastalrisk.live
 # Github: https://github.com/CERA-GROUP
-############################################################################################################
-#
-# Import libraries
-import sys
-import cartopy.feature as cfeature
-import cartopy.crs as ccrs
-import matplotlib.pyplot as plt
-import matplotlib.image as image
-from matplotlib.offsetbox import (AnnotationBbox, OffsetImage, TextArea)
-import numpy as np
-import pandas as pd
+
+# This script is the command-line companion to the Cartopy notebook. It keeps
+# the tutorial flow visible while separating input checks, data loading, and
+# plotting into small functions that are easier to test and reuse.
+
+import argparse
+from pathlib import Path
 import urllib.request
-from PIL import Image
 import warnings
-import os
-# Checking if CSV file is provided
-if len(sys.argv) < 2:
-    warnings.warn("No CSV file provided. Please provide a CSV file as an argument.")
-    sys.exit()
 
-# Checking if the provided CSV file exists and is readable
-csv_file = sys.argv[1]
-if not os.path.isfile(csv_file) or not os.access(csv_file, os.R_OK):
-    sys.exit("\033[91mThe provided CSV file does not exist or is not readable. Please provide a valid CSV file.\033[0m")
-    
-# Part 2: Map Visualization
-# 2.1 - Understanding the Matplotlib Plot Structure
-# Ignore warnings
-warnings.filterwarnings('ignore')
 
-# 2.2 - Creating a basic map with Cartopy
-print("\033[92mCreating a basic map with Cartopy - Plate Carrée projection\033[0m")
-# Creating a map with Plate Carrée projection and add coastline
-ax = plt.axes(projection=ccrs.PlateCarree()) 
-ax.add_feature(cfeature.COASTLINE)
-plt.show()
+# Shared tutorial settings are constants so map bounds, titles, and required
+# CSV columns are defined once and stay consistent across the script.
+ATLANTIC_GULF_EXTENT = [-120, -45, 5, 50]
+DEFAULT_TITLE = "Background map with water level stations"
+LOGO_URL = "https://coastalrisk.live/wp-content/uploads/2018/05/cera_50x50.png"
+REQUIRED_COLUMNS = ("station_id", "lat", "lon")
 
-print("\033[92mCreating a basic map with Cartopy - Mollweide projection\033[0m")
-# Creating a map with Mollweide projection and add coastline
-ax = plt.axes(projection=ccrs.Mollweide(central_longitude=-90))
-ax.add_feature(cfeature.COASTLINE)
-plt.show()
 
-# 2.3 - Adding a background image and customize the coastline feature
-print("\033[92mCreating a map with Plate Carrée projection, adding customized coastline and a background image\033[0m")
-# Creating a map with Plate Carrée projection, add customized coastline and a background image
-ax = plt.axes(projection=ccrs.PlateCarree())
-ax.add_feature(cfeature.COASTLINE, linestyle='dotted', linewidth=1, color='red')
-ax.stock_img()
-plt.show()
+def parse_args():
+    """Parse command-line options for the Cartopy tutorial script."""
+    # argparse gives the script standard help text and clear errors for missing
+    # or misspelled command-line options.
+    parser = argparse.ArgumentParser(
+        description="Create Cartopy maps from a CSV file of station coordinates."
+    )
+    parser.add_argument(
+        "csv_file",
+        type=Path,
+        help="CSV file containing station_id, lat, and lon columns.",
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        help="Save the final station map to this image file.",
+    )
+    parser.add_argument(
+        "--no-show",
+        action="store_true",
+        help="Do not open interactive plot windows.",
+    )
+    parser.add_argument(
+        "--title",
+        default=DEFAULT_TITLE,
+        help="Title for the final station map.",
+    )
+    return parser.parse_args()
 
-# Part 3: Overlaying Coordinate Points on Maps
-# 3.1 - Importing the CSV file
-csv_file = sys.argv[1]
-df_stations = pd.read_csv(csv_file)
 
-# 3.2 - Exploring the Pandas data frame
-print("\033[92mPrinting the Pandas data frame\033[0m")
-df_stations.info()
+def validate_csv(path):
+    """Check that the CSV path exists and can be read."""
+    # File checks happen before loading data or plotting libraries, so common
+    # user mistakes fail with a direct message.
+    if not path.exists():
+        raise ValueError(f"CSV file not found: {path}")
+    if not path.is_file():
+        raise ValueError(f"CSV path is not a file: {path}")
 
-# 3.3 - Mapping the point data
-lon = df_stations['lon'][:]
-lat = df_stations['lat'][:]
+    try:
+        with path.open("r", encoding="utf-8"):
+            pass
+    except OSError as exc:
+        raise ValueError(f"CSV file is not readable: {path}") from exc
 
-plt.plot(lon, lat, marker='o', linewidth=0)
-plt.show()
+    return path
 
-# 3.4 - Adding the points to the background map
-print("\033[92mAdding the points to the background map\033[0m")
-plt.figure(figsize=(12,6)) 
-ax = plt.axes(projection=ccrs.PlateCarree())
-ax.set_extent([-45, -120, 5, 50])
 
-ax.add_feature(cfeature.COASTLINE.with_scale('50m'), linewidth=.6)
-ax.add_feature(cfeature.OCEAN.with_scale('50m'), color='#EDFBFF')
-ax.add_feature(cfeature.LAND.with_scale('50m'), color='#FBF5EA')
-ax.add_feature(cfeature.LAKES.with_scale('50m'), color='#EDFBFF')
-ax.add_feature(cfeature.STATES.with_scale('50m'), linewidth=.5)
+def validate_output_path(path):
+    """Check that the output directory exists before plotting."""
+    if path is None:
+        return None
 
-gls = ax.gridlines(draw_labels=True, linestyle='dotted', color='black')
-gls.top_labels=False   
-gls.right_labels=False 
+    # Matplotlib can create the image file, but it will not create missing
+    # parent folders. Catch that early and report the exact directory problem.
+    output_dir = path.parent
+    if output_dir and not output_dir.exists():
+        raise ValueError(f"Output directory does not exist: {output_dir}")
 
-ax.set_title('Background map with water level stations')
+    return path
 
-plt.plot(lon, lat, color='r', marker='o', markersize=10, linewidth=0)
-plt.show()
 
-# 3.5 - Limiting the map extent to the area of interest and add point labels
-print("\033[92mLimiting the map extent to the area of interest and adding point labels\033[0m")
-plt.figure(figsize=(12,6)) 
-ax = plt.axes(projection=ccrs.PlateCarree())
+def load_station_data(path):
+    """Load and validate station coordinate data."""
+    # Import pandas here so path validation can still run in minimal
+    # environments and report missing files without needing plotting packages.
+    import pandas as pd
 
-ax.add_feature(cfeature.COASTLINE.with_scale('10m'), linewidth=.6)
-ax.add_feature(cfeature.OCEAN.with_scale('10m'), color='#EDFBFF')
-ax.add_feature(cfeature.LAND.with_scale('10m'), color='#FBF5EA')
-ax.add_feature(cfeature.LAKES.with_scale('10m'), color='#EDFBFF')
-ax.add_feature(cfeature.STATES.with_scale('10m'), linewidth=.5)
+    try:
+        # Station IDs may contain leading zeros, so keep them as text for labels.
+        stations = pd.read_csv(path, dtype={"station_id": str})
+    except Exception as exc:
+        raise ValueError(f"Could not read CSV file: {path}") from exc
 
-gls = ax.gridlines(draw_labels=True, linestyle='dotted', color='black')
-gls.top_labels=False   
-gls.right_labels=False 
+    # The plotting functions rely on these three columns. Failing here avoids
+    # harder-to-debug errors later in Cartopy or Matplotlib.
+    missing_columns = [
+        column for column in REQUIRED_COLUMNS if column not in stations.columns
+    ]
+    if missing_columns:
+        raise ValueError(
+            "CSV file is missing required column(s): "
+            + ", ".join(missing_columns)
+        )
 
-ax.set_title('Background map with water level stations')
+    if stations.empty:
+        raise ValueError("CSV file does not contain any station rows.")
 
-plt.plot(lon, lat, color='r', marker='o', markersize=10, linewidth=0)
+    for coordinate in ("lat", "lon"):
+        # Convert coordinates once after loading, then keep the DataFrame clean
+        # for all downstream plotting functions.
+        numeric_values = pd.to_numeric(stations[coordinate], errors="coerce")
+        invalid_rows = numeric_values.isna()
+        if invalid_rows.any():
+            # Add 2 because pandas indices are zero-based and CSV row 1 is the
+            # header line.
+            row_numbers = stations.index[invalid_rows][:5] + 2
+            rows_text = ", ".join(str(row) for row in row_numbers)
+            raise ValueError(
+                f"Column '{coordinate}' must contain numeric values. "
+                f"Invalid data found on CSV row(s): {rows_text}"
+            )
+        stations[coordinate] = numeric_values
 
-station_id = df_stations['station_id'][:]
-for i, txt in enumerate(station_id):
-  ax.annotate(txt, (lon[i]+0.2, lat[i]))
+    return stations
 
-plt.xlim((lon.min()-1, lon.max()+1))
-plt.ylim((lat.min()-1, lat.max()+1))
 
-with urllib.request.urlopen('https://coastalrisk.live/wp-content/uploads/2018/05/cera_50x50.png') as url:
-    logo = np.array(Image.open(url))
-imagebox = OffsetImage(logo, zoom = 0.5)
-ab_img = AnnotationBbox(imagebox, (lon.min()-0.6,lat.max()+0.6), bboxprops =dict(edgecolor='None'), frameon=False)
-ab_text = AnnotationBbox(TextArea("cera.coastalrisk.live"), (lon.min()+0.75,lat.max()+0.6)) 
-ax.add_artist(ab_img)
-ax.add_artist(ab_text)
+def create_overview_maps(show=True):
+    """Create the simple overview maps used in the tutorial."""
+    # These maps mirror the early notebook examples and introduce projections
+    # before station data is added.
+    import cartopy.crs as ccrs
+    import cartopy.feature as cfeature
+    import matplotlib.pyplot as plt
 
-plt.show()
+    print("Creating a basic map with Cartopy - Plate Carree projection")
+    # Use a separate figure for each example so closing or showing one plot does
+    # not affect the next tutorial step.
+    fig = plt.figure(figsize=(8, 4))
+    ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree())
+    ax.add_feature(cfeature.COASTLINE)
+    _show_or_close(fig, show)
+
+    print("Creating a basic map with Cartopy - Mollweide projection")
+    fig = plt.figure(figsize=(8, 4))
+    ax = fig.add_subplot(
+        1,
+        1,
+        1,
+        projection=ccrs.Mollweide(central_longitude=-90),
+    )
+    ax.add_feature(cfeature.COASTLINE)
+    _show_or_close(fig, show)
+
+    print("Creating a map with customized coastline and a background image")
+    fig = plt.figure(figsize=(8, 4))
+    ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree())
+    ax.add_feature(cfeature.COASTLINE, linestyle="dotted", linewidth=1, color="red")
+    ax.stock_img()
+    _show_or_close(fig, show)
+
+
+def create_regional_station_map(stations, show=True):
+    """Create a broad Atlantic/Gulf map with station points."""
+    import cartopy.crs as ccrs
+    import matplotlib.pyplot as plt
+
+    print("Adding station points to the regional background map")
+    fig = plt.figure(figsize=(12, 6))
+    ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree())
+    # Cartopy expects extent as [west, east, south, north]. This broad view
+    # provides geographic context before zooming to the station bounding box.
+    ax.set_extent(ATLANTIC_GULF_EXTENT, crs=ccrs.PlateCarree())
+
+    _add_map_features(ax, scale="50m")
+    _add_gridlines(ax)
+
+    ax.set_title(DEFAULT_TITLE)
+    ax.scatter(
+        stations["lon"],
+        stations["lat"],
+        color="red",
+        marker="o",
+        s=100,
+        # The input CSV stores station coordinates as longitude/latitude.
+        transform=ccrs.PlateCarree(),
+    )
+    _show_or_close(fig, show)
+
+
+def create_station_map(stations, title, output=None, show=True):
+    """Create the final labeled station map and optionally save it."""
+    import cartopy.crs as ccrs
+    import matplotlib.pyplot as plt
+
+    print("Creating the final labeled station map")
+    fig = plt.figure(figsize=(12, 6))
+    ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree())
+
+    # The final map focuses on the provided data rather than a fixed region, so
+    # its extent is derived from station coordinates.
+    ax.set_extent(_station_extent(stations), crs=ccrs.PlateCarree())
+    _add_map_features(ax, scale="10m")
+    _add_gridlines(ax)
+
+    ax.set_title(title)
+    ax.scatter(
+        stations["lon"],
+        stations["lat"],
+        color="red",
+        marker="o",
+        s=100,
+        # Tell Cartopy that station values are already lon/lat coordinates.
+        transform=ccrs.PlateCarree(),
+    )
+
+    # Labels are offset slightly so they do not sit directly on top of markers.
+    for station in stations.itertuples(index=False):
+        ax.text(
+            station.lon + 0.2,
+            station.lat,
+            str(station.station_id),
+            transform=ccrs.PlateCarree(),
+        )
+
+    _add_cera_logo(ax, stations["lon"].min(), stations["lat"].max())
+
+    if output is not None:
+        # Only the final station map is saved; the overview maps remain tutorial
+        # demonstrations.
+        fig.savefig(output, dpi=150, bbox_inches="tight")
+        print(f"Saved final station map to {output}")
+
+    _show_or_close(fig, show)
+
+
+def _add_map_features(ax, scale):
+    """Add common Cartopy background features."""
+    import cartopy.feature as cfeature
+
+    # Keeping repeated Natural Earth features in one helper makes the regional
+    # and final maps visually consistent.
+    ax.add_feature(cfeature.COASTLINE.with_scale(scale), linewidth=0.6)
+    ax.add_feature(cfeature.OCEAN.with_scale(scale), color="#EDFBFF")
+    ax.add_feature(cfeature.LAND.with_scale(scale), color="#FBF5EA")
+    ax.add_feature(cfeature.LAKES.with_scale(scale), color="#EDFBFF")
+    ax.add_feature(cfeature.STATES.with_scale(scale), linewidth=0.5)
+
+
+def _add_gridlines(ax):
+    """Add labeled gridlines to a Cartopy axis."""
+    gridlines = ax.gridlines(draw_labels=True, linestyle="dotted", color="black")
+    # Top and right labels duplicate the bottom and left labels on a simple map.
+    gridlines.top_labels = False
+    gridlines.right_labels = False
+
+
+def _station_extent(stations, buffer_degrees=1.0):
+    """Return a [west, east, south, north] extent around the stations."""
+    # A small buffer keeps markers and labels from touching the map edges.
+    west = stations["lon"].min() - buffer_degrees
+    east = stations["lon"].max() + buffer_degrees
+    south = stations["lat"].min() - buffer_degrees
+    north = stations["lat"].max() + buffer_degrees
+    return [west, east, south, north]
+
+
+def _add_cera_logo(ax, lon_min, lat_max):
+    """Add the CERA logo when it is reachable."""
+    import numpy as np
+    from PIL import Image
+    from matplotlib.offsetbox import AnnotationBbox, OffsetImage, TextArea
+
+    try:
+        # The logo is decorative context. If the network is unavailable, the map
+        # should still be produced and the user should see a warning.
+        with urllib.request.urlopen(LOGO_URL) as url:
+            logo = np.array(Image.open(url))
+    except Exception as exc:
+        warnings.warn(f"Could not load CERA logo: {exc}")
+        return
+
+    imagebox = OffsetImage(logo, zoom=0.5)
+    logo_box = AnnotationBbox(
+        imagebox,
+        (lon_min - 0.6, lat_max + 0.6),
+        bboxprops={"edgecolor": "None"},
+        frameon=False,
+    )
+    label_box = AnnotationBbox(
+        TextArea("cera.coastalrisk.live"),
+        (lon_min + 0.75, lat_max + 0.6),
+    )
+    ax.add_artist(logo_box)
+    ax.add_artist(label_box)
+
+
+def _show_or_close(fig, show):
+    """Show a figure interactively or close it for batch runs."""
+    import matplotlib.pyplot as plt
+
+    if show:
+        plt.show()
+    else:
+        # Closing figures in --no-show mode prevents memory growth and avoids
+        # opening windows during automated runs.
+        plt.close(fig)
+
+
+def main():
+    args = parse_args()
+    show_plots = not args.no_show
+
+    try:
+        # Validate all user-controlled inputs before spending time on plotting.
+        csv_path = validate_csv(args.csv_file)
+        output_path = validate_output_path(args.output)
+        stations = load_station_data(csv_path)
+    except ValueError as exc:
+        raise SystemExit(f"Error: {exc}") from exc
+
+    if not show_plots:
+        import matplotlib
+
+        # The Agg backend renders images without a GUI, which is useful for
+        # servers, scripts, and reproducible command-line runs.
+        matplotlib.use("Agg")
+
+    print("Printing the station data frame")
+    stations.info()
+
+    # Keep the notebook's learning sequence: simple projection examples first,
+    # then a regional station view, and finally the labeled output map.
+    create_overview_maps(show=show_plots)
+    create_regional_station_map(stations, show=show_plots)
+    create_station_map(
+        stations,
+        title=args.title,
+        output=output_path,
+        show=show_plots,
+    )
+
+
+if __name__ == "__main__":
+    main()

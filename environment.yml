@@ -1,0 +1,15 @@
+name: cera-tutorials
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - matplotlib
+  - netcdf4
+  - cartopy
+  - pillow
+  - ipywidgets
+  - jupyterlab
+  - notebook
+  - ipykernel
