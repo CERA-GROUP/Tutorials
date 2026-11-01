@@ -32,11 +32,14 @@ Requires the Conda environment in the repository's `environment.yml`.
 
 * Direct python script [file](cera_contour_matplotlib.py).
 * Check the tutorial [instructions](cera_contour_matplotlib.ipynb).
-* Example ADCIRC NetCDF file [input file](https://cloud.cera.lsu.edu/s/frcZtNgANgdgCXP/download/maxele_contouring.63.nc).
+
+### Input data
+
+* Example ADCIRC NetCDF file [input file](https://cloud.cera.lsu.edu/s/frcZtNgANgdgCXP/download/maxele_contouring.63.nc). It is not bundled with this repository; place `maxele_contouring.63.nc` next to the notebook. The cloud server is not always available.
 
 ### Command line options
 
-    cera_contour_matplotlib.py -i (input datafile) -a (netcdf attribute name) -g (mesh file) -n (intervals) -m (maxlevel)
+    cera_contour_matplotlib.py -i (input datafile) -a (netcdf attribute name) [-g (mesh file)] [-n (intervals)] [-m (maxlevel)] [-o (output image)] [--dpi (resolution)] [--no-show]
 
 always use:
 
@@ -49,27 +52,30 @@ always use:
 
 optional:
 
-      -n | intervals    number of contour intervals in output file (default:30)
-      -m | maxlevel     maximum data value to be used for contouring (default:highest value
+      -n | intervals    number of contour intervals in output plot (default: 30)
+      -m | maxlevel     maximum data value to be used for contouring (default: highest value
                         in data array)
+      -o | output       save the contour map to this image file
+      --dpi             resolution for saved images (default: 300)
+      --no-show         do not open the interactive plot window
 
-## Example usage
+## Example output
 
-Download the test data file (maxele.63.nc) in your script directory.
+Download the test data file (maxele_contouring.63.nc) into this directory.
 
-    [1] cera_contour_matplotlib.py -i maxele.63.nc -a zeta_max
+    [1] cera_contour_matplotlib.py -i maxele_contouring.63.nc -a zeta_max --output example_1_plot.png
 
 ![Example 1](example_1_plot.png)
 
 In this example, no optional parameters (-n intervals or -m maxlevel) are specified. The default values for these options will be applied. The maxlevel uses always the original units from the input file (here: meters). The output contours will be classified as 30 levels and stretched between zero and the maximum data value in the input file (here: 10.62 meters).
 
-    [2] cera_contour_matplotlib.py -i maxele.63.nc -a zeta_max -m 2
+    [2] cera_contour_matplotlib.py -i maxele_contouring.63.nc -a zeta_max -m 2 --output example_2_plot.png
 
 ![Example 2](example_2_plot.png)
 
 In this example, the maxlevel is given with the option -m as 2 (meters). The output contours will be classified as 30 levels (default value for the missing option -n (intervals)). The levels will be limited to 0-2m.
 
-    [3] cera_contour_matplotlib.py -i maxele.63.nc -a zeta_max -n 10 -m 1
+    [3] cera_contour_matplotlib.py -i maxele_contouring.63.nc -a zeta_max -n 10 -m 1 --output example_3_plot.png
 
 ![Example 3](example_3_plot.png)
 

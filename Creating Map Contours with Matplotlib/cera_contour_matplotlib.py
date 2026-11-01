@@ -24,8 +24,10 @@
 # necessarily followed by its interiors). This has to be explicitly tested
 # in your own script.
 
-import os, sys
-import optparse
+import sys
+import argparse
+from pathlib import Path
+
 import netCDF4
 import matplotlib.pyplot as plt
 import matplotlib.tri as tri
@@ -36,24 +38,35 @@ from operator import itemgetter
 
 ###############################################################################
 def create_command_line_parser():
-  parser = optparse.OptionParser(
-    description='Extract contours from an ADCIRC netcdf file.',
-    add_help_option=False)
+  parser = argparse.ArgumentParser(
+    description='Extract contours from an ADCIRC NetCDF file.')
 
-  parser.add_option('-a', dest='attrname',
-    help='attribute name of the NetCDF data array')
-  parser.add_option('-g', dest='grid',
-    help='optional: name of the NetCDF file containing the ADCIRC mesh (default: input file)')
-  parser.add_option('-i', dest='infile',
+  parser.add_argument('-i', '--infile', required=True,
     help='name of the NetCDF input file containing the ADCIRC data')
-  parser.add_option('-m', dest='maxlevel',
-    help='maximum data value to be used for contouring [default:highest value in data array]')
-  parser.add_option('-n', dest='intervals',
-    help='number of contour intervals in output file [default:30]')
-  parser.add_option('-?', action='help',
-    help='print this message and exit')
+  parser.add_argument('-a', '--attrname', required=True,
+    help='attribute name of the NetCDF data array')
+  parser.add_argument('-g', '--grid',
+    help='optional: name of the NetCDF file containing the ADCIRC mesh (default: input file)')
+  parser.add_argument('-n', '--intervals', type=int, default=30,
+    help='number of contour intervals in the output plot (default: 30)')
+  parser.add_argument('-m', '--maxlevel', type=float,
+    help='maximum data value to be used for contouring (default: highest value in data array)')
+  parser.add_argument('-o', '--output', type=Path,
+    help='save the contour map to this image file')
+  parser.add_argument('--dpi', type=int, default=300,
+    help='resolution for saved images (default: 300)')
+  parser.add_argument('--no-show', action='store_true',
+    help='do not open the interactive plot window')
 
   return parser
+
+###############################################################################
+def validate_output_path(output):
+  if output is None:
+    return None
+  if output.parent and not output.parent.exists():
+    raise ValueError("Output directory does not exist: %s" % output.parent)
+  return output
 
 ###############################################################################
 # read x,y from the grid file or the input file if grid is not given
@@ -100,37 +113,23 @@ def get_netcdf_data(infile, attrname):
   return data
 
 ###############################################################################
-# cera_contour_matplotlib.py -i [infile] -a [attrname] <-g [gridfile] -n [intervals] -m [maxlevel]>"
-def create_contours(argv):
+# cera_contour_matplotlib.py -i [infile] -a [attrname] <-g [gridfile] -n [intervals] -m [maxlevel]>
+def create_contours(argv=None):
 
   # analyse command line
-  parser = create_command_line_parser()
+  args = create_command_line_parser().parse_args(argv)
+
+  infile = args.infile
+  attrname = args.attrname
+  gridfile = args.grid if args.grid is not None else infile
+
+  # tricontourf draws one fewer band than the number of levels
+  intervals = args.intervals + 1
+
   try:
-    options, args = parser.parse_args(argv)
-  except optparse.OptionError as e:
-    print("*** ERROR *** %s\n\n" % str(e))
-    sys.exit(-1)
-
-  # command line sanity checks
-  if (options.infile is None):
-    print("*** ERROR *** Missing option -i [infile]")
-    sys.exit(-1)
-  infile = options.infile
-
-  if (options.attrname is None):
-    print("*** ERROR *** Missing option -a [attrname]")
-    sys.exit(-1)
-  attrname = options.attrname
-
-  if (options.grid is None):
-    gridfile = infile
-  else:
-    gridfile = options.grid
-
-  if options.intervals is None:
-    intervals = 31
-  else:
-    intervals = int(options.intervals) + 1
+    output = validate_output_path(args.output)
+  except ValueError as exc:
+    raise SystemExit("Error: %s" % exc) from exc
 
   ###############################
   # get grid data from netcdf grid or input file
@@ -139,11 +138,11 @@ def create_contours(argv):
   # get data from 'attrname' array in netcdf input file
   data = get_netcdf_data(infile, attrname)
 
-  if options.maxlevel is None:
+  if args.maxlevel is None:
     # highest value in data array is used
     maxlevel = data.max()
   else:
-    maxlevel = float(options.maxlevel)
+    maxlevel = args.maxlevel
 
   ###############################
   # matplotlib: triangulation
@@ -171,23 +170,29 @@ def create_contours(argv):
 
   #############################################################################
   print('Making contours ...\n')
-  contour = plt.tricontourf(triang, data, levels=levels, extend='both')
 
   # pyplot color plot
   c = plt.tricontourf(triang, data, levels=levels, cmap=plt.cm.jet, extend='both')
   c.cmap.set_under("#000066")
   c.cmap.set_over("#880066")
   plt.colorbar(c, ticks=levels)
-  plt.show()
+
+  if output is not None:
+    plt.savefig(output, dpi=args.dpi, bbox_inches='tight')
+    print("Saved contour map to %s" % output)
+
+  if args.no_show:
+    plt.close()
+  else:
+    plt.show()
 
 ###############################################################################
-def main(argv):
-  if len(argv) < 5:
-    print("Usage: cera_contour_matplotlib.py -i [input datafile] -a [netcdf attribute name] <optional: -g [gridfile] -n [intervals] -m [maxlevel]>")
-    sys.exit(-1)
+def main(argv=None):
+  if argv is None:
+    argv = sys.argv[1:]
 
   # create contours with matplotlib
   return create_contours(argv)
 
 if __name__ == "__main__":
-  sys.exit(main(sys.argv))
+  sys.exit(main(sys.argv[1:]))

@@ -18,22 +18,24 @@ Requires the Conda environment in the repository's `environment.yml`.
 
 ### Jupyter Notebook
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Adding%20Map%20Features%20with%20Cartopy/Cartopy.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Adding%20Map%20Features%20with%20Cartopy/cera_cartopy.ipynb)
 
 ### Python standalone
 
 * Direct python script [file](cera_cartopy.py).
-* Check the tutorial [instructions](Cartopy.ipynb).
-* Example station point data file [water_level_stations.csv](https://cloud.cera.lsu.edu/s/6qamYSWn2FarbLP/download/water_level_stations.csv).
+* Check the tutorial [instructions](cera_cartopy.ipynb).
+
+### Input data
+
+* [`water_level_stations.csv`](water_level_stations.csv) is bundled with this tutorial, so it runs offline. The notebook downloads it only if it is missing.
 
 Given the relative path to the repository and the name of the Python script, you can execute it from the terminal as follows:
 
 ```bash
 cd "Adding Map Features with Cartopy"
-wget -O water_level_stations.csv https://cloud.cera.lsu.edu/s/6qamYSWn2FarbLP/download/water_level_stations.csv
 python3 cera_cartopy.py water_level_stations.csv
-python3 cera_cartopy.py water_level_stations.csv --output station_map.png
-python3 cera_cartopy.py water_level_stations.csv --output station_map.png --no-show
+python3 cera_cartopy.py water_level_stations.csv --output example_1_plot.png
+python3 cera_cartopy.py water_level_stations.csv --output example_1_plot.png --no-show
 python3 cera_cartopy.py water_level_stations.csv --title "Water level stations"
 ```
 

@@ -49,6 +49,12 @@ def parse_args():
         default=DEFAULT_TITLE,
         help="Title for the final station map.",
     )
+    parser.add_argument(
+        "--dpi",
+        type=int,
+        default=300,
+        help="Resolution for saved images (default: 300).",
+    )
     return parser.parse_args()
 
 
@@ -192,7 +198,7 @@ def create_regional_station_map(stations, show=True):
     _show_or_close(fig, show)
 
 
-def create_station_map(stations, title, output=None, show=True):
+def create_station_map(stations, title, output=None, show=True, dpi=300):
     """Create the final labeled station map and optionally save it."""
     import cartopy.crs as ccrs
     import matplotlib.pyplot as plt
@@ -232,7 +238,7 @@ def create_station_map(stations, title, output=None, show=True):
     if output is not None:
         # Only the final station map is saved; the overview maps remain tutorial
         # demonstrations.
-        fig.savefig(output, dpi=150, bbox_inches="tight")
+        fig.savefig(output, dpi=dpi, bbox_inches="tight")
         print(f"Saved final station map to {output}")
 
     _show_or_close(fig, show)
@@ -342,6 +348,7 @@ def main():
         title=args.title,
         output=output_path,
         show=show_plots,
+        dpi=args.dpi,
     )
 
 
