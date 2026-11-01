@@ -42,3 +42,7 @@ The input CSV file must contain these columns:
 ```text
 station_id, lat, lon
 ```
+
+## Example output
+
+![Background map with water level stations](example_1_plot.png)

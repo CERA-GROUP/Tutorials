@@ -10,9 +10,7 @@
 *.nc.*
 water_level_stations.csv
 
-# Generated maps and outputs
-station_map.png
-*_map.png
+# Generated outputs
 output_*.txt
 
 # OS junk
@@ -36,8 +34,3 @@ venv/
 # Tutorial generated files
 # ---------------------------------------------------------------------------
 .cartopy_test/
-
-# ---------------------------------------------------------------------------
-# Whitelist: assets that must be committed even if a rule above matches.
-# ---------------------------------------------------------------------------
-!example_*_plot.png
