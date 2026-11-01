@@ -3,14 +3,9 @@
 # If multiple time steps are given in the ADCIRC netcdf file,
 # the first time step will be extracted.
 
-# Copyright (C): Carola Kaiser 2014-2024, Louisiana State University
-
-# This script is part of the Coastal Emergency Risks Assessment (CERA),
-# a real-time visualization system for ADCIRC storm surge guidance.
-# See https://cera.coastalrisk.live.
-# Thus CERA script is Open Source software; distributed under the Boost Software
-# License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy
-# at http://www.boost.org/LICENSE_1_0.txt)
+# Copyright (C): Carola Kaiser 2006-2026, Louisiana State University.
+# This script is part of the Coastal Emergency Risks Assessment (CERA), a real-time visualization system for storm surge guidance.
+# See https://cera.coastalrisk.live. This CERA script is Open Source software; distributed under the MIT License.
 
 # script specifics and bugfixes:
 # Matplotlib 'tricontourf' expects a data array, but does not support

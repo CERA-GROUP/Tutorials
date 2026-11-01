@@ -3,6 +3,10 @@
 # Website: https://cera.coastalrisk.live
 # Github: https://github.com/CERA-GROUP
 
+# Copyright (C): Carola Kaiser 2006-2026, Louisiana State University.
+# This script is part of the Coastal Emergency Risks Assessment (CERA), a real-time visualization system for storm surge guidance.
+# See https://cera.coastalrisk.live. This CERA script is Open Source software; distributed under the MIT License.
+
 # This script is the command-line companion to the Cartopy notebook. It keeps
 # the tutorial flow visible while separating input checks, data loading, and
 # plotting into small functions that are easier to test and reuse.
