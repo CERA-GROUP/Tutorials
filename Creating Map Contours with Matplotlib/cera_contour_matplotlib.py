@@ -159,7 +159,7 @@ def create_contours(argv):
     if data.mask.any():
       # -99999 entries in 'data' array are usually masked, mask all corresponding triangles
       point_mask_indices = numpy.where(data.mask)
-      tri_mask = numpy.any(numpy.in1d(elems, point_mask_indices).reshape(-1, 3), axis=1)
+      tri_mask = numpy.isin(elems, point_mask_indices).reshape(-1, 3).any(axis=1)
       triang.set_mask(tri_mask)
 
   except AttributeError:

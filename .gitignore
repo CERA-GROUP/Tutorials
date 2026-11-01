@@ -40,4 +40,4 @@ venv/
 # ---------------------------------------------------------------------------
 # Whitelist: assets that must be committed even if a rule above matches.
 # ---------------------------------------------------------------------------
-!Contouring_Tutorial/example_*_plot.png
+!example_*_plot.png

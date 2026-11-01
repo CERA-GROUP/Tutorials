@@ -26,12 +26,12 @@ Requires the Conda environment in the repository's `environment.yml`.
 
 ### Jupyter Notebook
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Creating%20Map%20Contours%20with%20Matplotlib/Contouring_Tutorial/cera_contour_matplotlib.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Creating%20Map%20Contours%20with%20Matplotlib/cera_contour_matplotlib.ipynb)
 
 ### Python standalone
 
-* Direct python script [file](Contouring_Tutorial/cera_contour_matplotlib.py).
-* Check the tutorial [instructions](Contouring_Tutorial/cera_contour_matplotlib.ipynb).
+* Direct python script [file](cera_contour_matplotlib.py).
+* Check the tutorial [instructions](cera_contour_matplotlib.ipynb).
 * Example ADCIRC NetCDF file [input file](https://cloud.cera.lsu.edu/s/frcZtNgANgdgCXP/download/maxele_contouring.63.nc).
 
 ### Command line options
@@ -59,18 +59,18 @@ Download the test data file (maxele.63.nc) in your script directory.
 
     [1] cera_contour_matplotlib.py -i maxele.63.nc -a zeta_max
 
-![Example 1](Contouring_Tutorial/example_1_plot.png)
+![Example 1](example_1_plot.png)
 
 In this example, no optional parameters (-n intervals or -m maxlevel) are specified. The default values for these options will be applied. The maxlevel uses always the original units from the input file (here: meters). The output contours will be classified as 30 levels and stretched between zero and the maximum data value in the input file (here: 10.62 meters).
 
     [2] cera_contour_matplotlib.py -i maxele.63.nc -a zeta_max -m 2
 
-![Example 2](Contouring_Tutorial/example_2_plot.png)
+![Example 2](example_2_plot.png)
 
 In this example, the maxlevel is given with the option -m as 2 (meters). The output contours will be classified as 30 levels (default value for the missing option -n (intervals)). The levels will be limited to 0-2m.
 
     [3] cera_contour_matplotlib.py -i maxele.63.nc -a zeta_max -n 10 -m 1
 
-![Example 3](Contouring_Tutorial/example_3_plot.png)
+![Example 3](example_3_plot.png)
 
 In this example, the output contours will be classified as 10 levels (option -n intervals) between 0-1m (option -m maxlevel).
