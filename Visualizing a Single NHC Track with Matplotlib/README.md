@@ -13,17 +13,14 @@
 
 ## About this tutorial
 
-Render one ATCF best-track file into a publication-style map, optionally
-overlaying validation stations.
+Render one ATCF best-track file into a publication-style map.
 
 ## Notebooks
 
 | Notebook | Purpose |
 |---|---|
-| [`plot_tracks_modified.ipynb`](plot_tracks_modified.ipynb) | Render one ATCF best-track `.dat` file into a map. |
-| [`plot_tracks.orig.ipynb`](plot_tracks.orig.ipynb) | Original version of the notebook above. |
-| [`plot_stations_tracks.ipynb`](plot_stations_tracks.ipynb) | One storm's best track with validation stations overlaid. |
-| [`plot_stations_tracks_modified.ipynb`](plot_stations_tracks_modified.ipynb) | Revised version of the stations notebook. |
+| [`plot_tracks_modified.ipynb`](plot_tracks_modified.ipynb) | Current tutorial: inline render with saved outputs. |
+| [`plot_tracks.orig.ipynb`](plot_tracks.orig.ipynb) | Original version: reusable `plot_track_map()` function plus Colab/path detection. |
 
 ## Getting Started
 
