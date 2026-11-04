@@ -1,36 +1,66 @@
-# ---------------------------------------------------------------------------
-# Path-agnostic ignore rules.
-# These match by extension or filename so they survive tutorial renames and
-# new tutorials. If a tutorial needs to commit an example file that matches
-# one of these patterns, whitelist it explicitly with a leading "!".
-# ---------------------------------------------------------------------------
-
-# Tutorial data files (large, downloaded per tutorial)
-*.nc
-*.nc.*
-water_level_stations.csv
-
-# Generated outputs
-output_*.txt
-
-# OS junk
-.DS_Store
-
-# ---------------------------------------------------------------------------
-# Python
-# ---------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook
 .ipynb_checkpoints/
 
-# ---------------------------------------------------------------------------
-# Local environments
-# ---------------------------------------------------------------------------
-.venv/
-venv/
+# Environments
 .env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.cera_test/
 
-# ---------------------------------------------------------------------------
-# Tutorial generated files
-# ---------------------------------------------------------------------------
-.cartopy_test/
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Tutorial data
+*.nc
+*.nc.*
+!Analyzing NetCDF Files/maxele.63.nc
+!Creating Map Contours with Matplotlib/maxele_contouring.63.nc

@@ -14,25 +14,43 @@ Scientific geospatial datasets like climatological or oceanographic model result
 
 ## Getting Started
 
-Requires the Conda environment in the repository's `environment.yml`.
+Requires Python 3.15.2 and the shared packages in `requirements.txt`:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
 
 ### Jupyter Notebook
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Analyzing%20NetCDF%20Files/NetCDF_Tutorial/netCDF4.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Analyzing%20NetCDF%20Files/cera_netcdf.ipynb)
 
 ### Python standalone
 
-* Direct python script [file](NetCDF_Tutorial/net_CDF4.py).
-* Check the tutorial [instructions](NetCDF_Tutorial/netCDF4.ipynb).
-* Example ADCIRC NetCDF file [input file](https://cloud.cera.lsu.edu/s/7PfqfzWDj285Afw/download/maxele.63.nc).
+* Direct python script [file](cera_netcdf.py).
+* Check the tutorial [instructions](cera_netcdf.ipynb).
 
-## Running the tutorial
+### Input data
 
-From the repository root:
+* Place `maxele.63.nc` next to the notebook.
+
+Run the tutorial from this folder:
 
 ```bash
-cd "Analyzing NetCDF Files/NetCDF_Tutorial"
-wget -O maxele.63.nc https://cloud.cera.lsu.edu/s/7PfqfzWDj285Afw/download/maxele.63.nc
-jupyter lab netCDF4.ipynb
-python3 net_CDF4.py
+cd "Analyzing NetCDF Files"
+python3 cera_netcdf.py
+python3 cera_netcdf.py --output output_netcdf.txt
+jupyter lab cera_netcdf.ipynb
 ```
+
+### Command line options
+
+    cera_netcdf.py [-i INFILE] [-o OUTPUT]
+
+optional:
+
+      -i | infile       NetCDF input file (default: maxele.63.nc)
+      -o | output       text report output file (default: output_netcdf.txt)
+
+## Example output
+
+The script writes a text report to `output_netcdf.txt` containing the dataset structure, variable metadata, dimensions, shapes, sample values, and the `zeta_max` range.

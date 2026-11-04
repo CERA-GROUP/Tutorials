@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 # This script uses the python library matplotlib (http://matplotlib.org/)
 # to create contours from a single ADCIRC netcdf file.
 # If multiple time steps are given in the ADCIRC netcdf file,

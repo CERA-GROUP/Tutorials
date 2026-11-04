@@ -14,7 +14,11 @@ This tutorial focuses on the Cartopy library, a powerful tool for geospatial dat
 
 ## Getting Started
 
-Requires the Conda environment in the repository's `environment.yml`.
+Requires Python 3.15.2 and the shared packages in `requirements.txt`:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
 
 ### Jupyter Notebook
 
@@ -44,6 +48,18 @@ The input CSV file must contain these columns:
 ```text
 station_id, lat, lon
 ```
+
+### Command line options
+
+    cera_cartopy.py CSV_FILE [-o OUTPUT] [--title TITLE] [--dpi DPI] [--no-show]
+
+optional:
+
+      CSV_FILE          station_id, lat, and lon CSV file
+      -o | output       save the final station map to this image file
+      --title           title for the final station map
+      --dpi             resolution for saved images (default: 300)
+      --no-show         do not open interactive plot windows
 
 ## Example output
 

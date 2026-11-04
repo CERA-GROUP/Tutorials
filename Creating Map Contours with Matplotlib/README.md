@@ -22,7 +22,11 @@ Key highlights of this tutorial include:
 
 ## Getting Started
 
-Requires the Conda environment in the repository's `environment.yml`.
+Requires Python 3.15.2 and the shared packages in `requirements.txt`:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
 
 ### Jupyter Notebook
 
@@ -35,7 +39,7 @@ Requires the Conda environment in the repository's `environment.yml`.
 
 ### Input data
 
-* Example ADCIRC NetCDF file [input file](https://cloud.cera.lsu.edu/s/frcZtNgANgdgCXP/download/maxele_contouring.63.nc). It is not bundled with this repository; place `maxele_contouring.63.nc` next to the notebook. The cloud server is not always available.
+* Place `maxele_contouring.63.nc` next to the notebook.
 
 ### Command line options
 

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 # Geospatial data processing and producing maps
 # CERA Group, Louisiana State University
 # Website: https://cera.coastalrisk.live

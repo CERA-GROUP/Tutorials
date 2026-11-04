@@ -8,34 +8,54 @@
 
 # Visualizing Multiple NHC Tracks with Matplotlib
 
-> **Status:** work in progress. The notebooks are in place; this README is still
-> being written.
-
 ## About this tutorial
 
-Load a catalog of Atlantic ATCF best-track files, color each track segment by
-maximum sustained wind, and export one overview map per region.
-
-## Notebooks
-
-| Notebook | Region |
-|---|---|
-| [`plot_all_tracks.ipynb`](plot_all_tracks.ipynb) | All Atlantic storms |
-| [`plot_all_tracks_ck.ipynb`](plot_all_tracks_ck.ipynb) | Chesapeake |
-| [`plot_all_tracks_egom.ipynb`](plot_all_tracks_egom.ipynb) | East Gulf of Mexico |
-| [`plot_all_tracks_la.ipynb`](plot_all_tracks_la.ipynb) | Louisiana |
-| [`plot_all_tracks_nac.ipynb`](plot_all_tracks_nac.ipynb) | North Atlantic |
-| [`plot_all_tracks_ngom.ipynb`](plot_all_tracks_ngom.ipynb) | Northern Gulf |
-| [`plot_all_tracks_sab.ipynb`](plot_all_tracks_sab.ipynb) | South Atlantic Bight |
-| [`plot_all_tracks_sabnac.ipynb`](plot_all_tracks_sabnac.ipynb) | South Atlantic Bight + North Atlantic |
-| [`plot_all_tracks_stofs.ipynb`](plot_all_tracks_stofs.ipynb) | STOFS |
-| [`plot_all_tracks_tx.ipynb`](plot_all_tracks_tx.ipynb) | Texas |
+Load the master ATCF best-track catalog, color each track segment by maximum sustained wind, and export one overview map.
 
 ## Getting Started
 
-Requires the Conda environment in the repository's `environment.yml`.
+Requires Python 3.15.2 and the shared packages in `requirements.txt`:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+### Jupyter Notebook
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CERA-GROUP/Tutorials/blob/main/Visualizing%20Multiple%20NHC%20Tracks%20with%20Matplotlib/cera_multiple_tracks.ipynb)
+
+### Python standalone
+
+* Direct python script [file](cera_multiple_tracks.py).
+* Check the tutorial [instructions](cera_multiple_tracks.ipynb).
+
+### Input data
+
+* `tracks/storm_dat_files.csv` lists the cataloged storms and their `.dat` filenames.
+* The track files live under `tracks/{year}_{storm}/bal*.dat`.
+
+Run the tutorial from this folder:
 
 ```bash
 cd "Visualizing Multiple NHC Tracks with Matplotlib"
-jupyter lab plot_all_tracks.ipynb
+python3 cera_multiple_tracks.py
+python3 cera_multiple_tracks.py --output example_1_plot.png
+python3 cera_multiple_tracks.py --output example_1_plot.png --no-show
+jupyter lab cera_multiple_tracks.ipynb
 ```
+
+### Command line options
+
+    cera_multiple_tracks.py [--data-root DATA_ROOT] [-o OUTPUT] [--dpi DPI] [--branded] [--no-show]
+
+optional:
+
+      --data-root       directory containing storm_dat_files.csv (default: tracks)
+      -o | output       output image path (default: example_1_plot.png)
+      --dpi             resolution for the saved image (default: 300)
+      --branded         add the CERA title, logo, and footer
+      --no-show         do not open the interactive plot window
+
+## Example output
+
+![All storm best tracks](example_1_plot.png)
