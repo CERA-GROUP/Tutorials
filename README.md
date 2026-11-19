@@ -35,7 +35,7 @@ All tutorials require Python 3.15.2 and the shared packages in `requirements.txt
 
 ## License
 
-Code and documentation are released under the MIT License. See [LICENSE](LICENSE).
+Code and documentation are released under CC BY-NC 4.0 (CC+).
 
 Third-party data retain their original terms. See [ATTRIBUTION.md](ATTRIBUTION.md).
 
